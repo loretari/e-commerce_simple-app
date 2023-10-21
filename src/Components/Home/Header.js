@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './Header.css';
 import Dress1 from '../Assets/Header/Dress1.jpg';
 import Dress2 from '../Assets/Header/Dress2.jpg';
 import Dress3 from '../Assets/Header/Dress3.jpg';
@@ -7,7 +7,7 @@ import Dress4 from '../Assets/Header/Dress4.jpg';
 import { useState } from 'react';
 
 
-function Home () {
+function Header () {
 
     const [overlay, setOverlay] = useState(false);
 
@@ -26,8 +26,8 @@ function Home () {
                     <div className= "grid-container">
                         <div className= "featured grid-one">
                            <div
-                           id= "1"
-                           className={overlay ? "hard-overlay" : "lil-overlay"}
+                           id= "img1"
+                           className= "lil-overlay"
                            onMouseEnter={inOverlay}
                            onMouseLeave={outOverlay}
                            ></div>
@@ -36,7 +36,7 @@ function Home () {
                         </div>
                         <div className="featured grid-two">
                             <div
-                                id="2"
+                                id="img2"
                                 className={overlay ? "hard-overlay" : "lil-overlay"}
                                 onMouseEnter={inOverlay}
                                 onMouseLeave={outOverlay}
@@ -46,7 +46,7 @@ function Home () {
                         </div>
                         <div className="featured grid-four">
                             <div
-                                id="3"
+                                id="img3"
                                 className={overlay ? "hard-overlay" : "lil-overlay"}
                                 onMouseEnter={inOverlay}
                                 onMouseLeave={outOverlay}
@@ -56,7 +56,7 @@ function Home () {
                         </div>
                         <div className="featured grid-four-low">
                             <div
-                                id="4"
+                                id="img4"
                                 className={overlay ? "hard-overlay" : "lil-overlay"}
                                 onMouseEnter={inOverlay}
                                 onMouseLeave={outOverlay}
@@ -71,4 +71,4 @@ function Home () {
     )
 }
 
-export default Home;
+export default Header;
