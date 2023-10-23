@@ -5,7 +5,6 @@ import Banner from "../Components/Banner/Banner";
 import Banner1 from '../Components/Assets/Banner/Banner1.jpg';
 import Banner2 from '../Components/Assets/Banner/Banner2.jpg';
 import BannerReverse from "../Components/Banner/BannerReverse";
-import TrendingItem from "../Components/Trending/TrendingItem";
 import TrendingSlider from "../Components/Trending/TrendingSlider";
 
 
