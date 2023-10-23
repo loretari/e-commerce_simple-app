@@ -6,12 +6,15 @@ function Footer () {
         <>
         <footer>
       <div className= "footer-links">
-          <a href= "">About</a>
-          <a href= "">Store locator</a>
-          <a href= "">FAQs</a>
-          <a href= "">News</a>
-          <a href= "">Careers</a>
-          <a href= "">Contact us</a>
+
+              <a>About</a>
+              <a>Store locator</a>
+              <a>FAQs</a>
+              <a>News</a>
+              <a>Careers</a>
+              <a>Contact us</a>
+
+
       </div>
         <p className= "copyright" >Copyright @ 2023 Lor@. All rights reserved</p>
         </footer>
