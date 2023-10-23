@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
-import Dress1 from '../Assets/Header/Dress1_1.jpg';
-import Dress2 from '../Assets/Header/Dress2_1.jpg';
-import Dress3 from '../Assets/Header/Dress3_1.jpg';
-import Dress4 from '../Assets/Header/Dress4_1.jpg';
+import Dress1 from '../Assets/Header/Dress1.jpg';
+import Dress2 from '../Assets/Header/Dress2.jpg';
+import Dress3 from '../Assets/Header/Dress3.jpg';
+import Dress4 from '../Assets/Header/Dress4.jpg';
 import { useState } from 'react';
 
 
