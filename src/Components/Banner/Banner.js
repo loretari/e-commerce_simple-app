@@ -14,7 +14,7 @@ function Banner({ title, text, img }) {
                        </div>
                    </div>
                    <div className= "img-side">
-                       <img src={img} alt= "banner image" />
+                       <img src={img} alt= "banner" />
                    </div>
                </div>
            </div>
