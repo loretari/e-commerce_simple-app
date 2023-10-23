@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProudProducts.css'
-import Img1 from '../Assets/ProudProducts/1.jpg';
+// import Img1 from '../Assets/ProudProducts/1.jpg';
 import Img2 from '../Assets/ProudProducts/2.jpg';
 import Img3 from '../Assets/ProudProducts/3.jpg';
 import Img4 from '../Assets/ProudProducts/4.jpg';
@@ -19,7 +19,7 @@ function ProudProducts() {
               <div className= "container">
                   <div className= "products-grid">
                       <ProductItem
-                          img={Img1}
+                          img={Img2}
                           description= "Wool Coat with Belt"
                           price= "USD 119.00"
                       />
