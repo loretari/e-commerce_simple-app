@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
-import Dress1 from '../Assets/Header/Dress1.jpg';
-import Dress2 from '../Assets/Header/Dress2.jpg';
-import Dress3 from '../Assets/Header/Dress3.jpg';
-import Dress4 from '../Assets/Header/Dress4.jpg';
+import Dress1 from '../Assets/Header/Dress1_1.jpg';
+import Dress2 from '../Assets/Header/Dress2_1.jpg';
+import Dress3 from '../Assets/Header/Dress3_1.jpg';
+import Dress4 from '../Assets/Header/Dress4_1.jpg';
 import { useState } from 'react';
 
 
@@ -32,7 +32,8 @@ function Header () {
                            onMouseLeave={outOverlay}
                            ></div>
                          <img src={Dress1} alt= "dress1" />
-                         <p className= "main-description">Black in Black</p>
+                            <p className="main-description">Velvet In Black</p>
+
                         </div>
                         <div className="featured grid-two">
                             <div
@@ -42,7 +43,7 @@ function Header () {
                                 onMouseLeave={outOverlay}
                             ></div>
                             <img src={Dress2} alt="dress2" />
-                            <p className="main-description">If it is not black?</p>
+                            <p className="main-description">Elegant in Black</p>
                         </div>
                         <div className="featured grid-four">
                             <div
@@ -52,7 +53,8 @@ function Header () {
                                 onMouseLeave={outOverlay}
                             ></div>
                             <img src={Dress3} alt="dress3" />
-                            <p className="main-description">Velvet In Black</p>
+                            <p className= "main-description">Black in Black</p>
+
                         </div>
                         <div className="featured grid-four-low">
                             <div
@@ -62,7 +64,8 @@ function Header () {
                                 onMouseLeave={outOverlay}
                             ></div>
                             <img src={Dress4} alt="dress4" />
-                            <p className="main-description">Elegant in Black</p>
+                            <p className="main-description">If it is not black?</p>
+
                         </div>
                     </div>
                 </div>
