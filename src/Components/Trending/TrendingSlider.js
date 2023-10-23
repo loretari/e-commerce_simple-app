@@ -1,7 +1,7 @@
 import React from 'react';
 import './Trending.css';
-// import Img9 from '../Assets/Products/9.jpg';
-// import Img9 from '../Assets/Products/9.jpg';
+import Img8 from '../Assets/ProudProducts/8.jpg';
+import Img6 from '../Assets/ProudProducts/6.jpg';
 import Img5 from '../Assets/ProudProducts/5.jpg';
 // import arrow from '../Assets/arrow.png';
 import Img13 from '../Assets/Products/13.jpg';
@@ -57,7 +57,7 @@ function TrendingSlider () {
                  />
                  <TrendingItem
                      img={Img11}
-                     description= "Blue Dress in Ornament"
+                     description= "Blue Dress with Ornament"
                      price= "$108"
                  />
                  <TrendingItem
@@ -72,17 +72,17 @@ function TrendingSlider () {
                  />
                  <TrendingItem
                      img={Img5}
-                     description= "Navy Blue Dress"
-                     price= "$121"
+                     description= "Dress from two parts"
+                     price= "$103"
                  />
                  <TrendingItem
-                     img={Img9}
-                     description= "Navy Blue Dress"
-                     price= "$121"
+                     img={Img6}
+                     description= "Sky Blue Dress"
+                     price= "$119"
                  />
                  <TrendingItem
-                     img={Img9}
-                     description= "Navy Blue Dress"
+                     img={Img8}
+                     description= "Sky Blue Dress"
                      price= "$121"
                  />
 
