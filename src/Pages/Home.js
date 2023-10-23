@@ -7,6 +7,7 @@ import Banner2 from '../Components/Assets/Banner/Banner2.jpg';
 import BannerReverse from "../Components/Banner/BannerReverse";
 import TrendingSlider from "../Components/Trending/TrendingSlider";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
+import Footer from "../Components/Footer/Footer";
 
 
 function Home () {
@@ -26,6 +27,7 @@ function Home () {
             img={Banner2}
             />
             <NewsLetter/>
+            <Footer/>
        </>
     )
 }
