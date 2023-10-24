@@ -9,7 +9,7 @@ function Navbar () {
 
     return (
         <>
-        <nav className= "navbar">
+        <nav className= "navbar" id= "navbar">
             <div className= "container">
                 <div className= "nav-container">
 

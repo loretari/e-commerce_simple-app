@@ -1,18 +1,60 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-scroll';
 
 function Footer () {
     return (
         <>
         <footer>
       <div className= "footer-links">
-
-              <a>About</a>
-              <a>Store locator</a>
-              <a>FAQs</a>
-              <a>News</a>
-              <a>Careers</a>
-              <a>Contact us</a>
+          <Link
+              activeClass= 'active'
+              to= 'navbar'
+              spy={true} s
+              mooth={true}
+              offset={-100}
+              duration={500}
+          >About</Link>
+          <Link
+              activeClass= 'active'
+              to= 'header'
+              spy={true} s
+              mooth={true}
+              offset={-100}
+              duration={500}
+          >Store locator</Link>
+          <Link
+              activeClass= 'active'
+              to= 'header'
+              spy={true} s
+              mooth={true}
+              offset={-100}
+              duration={500}
+          >FAQs</Link>
+          <Link
+              activeClass= 'active'
+              to= 'header'
+              spy={true} s
+              mooth={true}
+              offset={-100}
+              duration={500}
+          >News</Link>
+          <Link
+              activeClass= 'active'
+              to= 'header'
+              spy={true} s
+              mooth={true}
+              offset={-100}
+              duration={500}
+          >Careers</Link>
+          <Link
+              activeClass= 'active'
+              to= 'header'
+              spy={true} s
+              mooth={true}
+              offset={-100}
+              duration={500}
+          >Contact us</Link>
 
 
       </div>
