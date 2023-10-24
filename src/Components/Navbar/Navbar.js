@@ -7,11 +7,23 @@ function Navbar () {
 
     const [links, setLinks] = useState("shop");
 
+    const [sticky, setSticky] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 10) {
+            setSticky(true);
+        } else {
+            setSticky(false);
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
     return (
         <>
         <nav className= "navbar" id= "navbar">
             <div className= "container">
-                <div className= "nav-container">
+                <div className= {`nav-container ${sticky ? "cont-sticky" : ""}`}>
 
             <div className= "nav-logo">
                 <Link style={{textDecoration: 'none'}} to='/'><img src={LogoImg} alt= "logo"/></Link>
