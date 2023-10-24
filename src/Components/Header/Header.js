@@ -20,7 +20,7 @@ function Header () {
     }
 
     return (
-        <>
+        <section id= 'header'>
             <div className= "home-container">
                 <div className= "container">
                     <div className= "grid-container">
@@ -70,7 +70,7 @@ function Header () {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }
 
