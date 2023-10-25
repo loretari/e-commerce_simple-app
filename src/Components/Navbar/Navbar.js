@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Navbar.css';
 import {Link} from "react-router-dom";
 import LogoImg from '../Assets/logo_Smile2.png';
+import CrossImg from '../Assets/cart_cross_icon.png';
 
 
 function Navbar () {
@@ -59,6 +60,16 @@ function Navbar () {
                     className= "listItem"
                     onClick = {() => setMobileNav(false)}>Bags</Link>
 
+            </div>
+
+            <div className= "open-cart">
+                <div className= "cart-title-btn">
+                    <h2>Your Shopping Cart (0 items)</h2>
+                    <span onClick={() => setMobileNav(!mobileNav)} >
+                        <img src={CrossImg} alt= "cross"/>
+                        {/*<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 20px; width: 20px;"><g clip-path="url(#cross_svg__clip0_473_4144)"><path d="M10.71 10l4.65-4.66a.495.495 0 10-.7-.7L10 9.29 5.34 4.64a.495.495 0 00-.7.7L9.29 10l-4.65 4.66a.48.48 0 000 .7.481.481 0 00.7 0L10 10.71l4.66 4.65a.482.482 0 00.7 0 .48.48 0 000-.7L10.71 10z" fill="currentColor"></path></g><defs><clipPath id="cross_svg__clip0_473_4144"><path fill="#fff" d="M0 0h20v20H0z"></path></clipPath></defs></svg>*/}
+                    </span>
+                </div>
             </div>
 
 

@@ -74,15 +74,7 @@
     background-color: transparent;
     color: black;
 }
-/*@media (max-width: 1200px) {*/
-/*    .banner-container {*/
-/*        display: block;*/
-/*        width: 100%;*/
-/*    }*/
-/*    .text-side {*/
-/*        width: 100%;*/
-/*    }*/
-/*}*/
+
 @media only screen and (max-width: 960px) {
     .text-side h2 {
         font-size: 2.2rem;
@@ -122,22 +114,3 @@
         width: 90%;
     }
 }
-
-/*@media (max-width: 750px) {*/
-/*    .banner-container {*/
-/*        display: block;*/
-/*        max-width: 80rem;*/
-/*    }*/
-/*    .text-side {*/
-/*        padding: 0 4rem;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 600px) {*/
-/*    .text-side {*/
-/*        width: 100%;*/
-/*    }*/
-    /*.img-side {*/
-    /*    height: 30rem;*/
-    /*}*/
-/*}*/
