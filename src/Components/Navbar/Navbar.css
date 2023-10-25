@@ -1,43 +1,38 @@
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow: 0 1px 3px -2px black;
     background-color: rgb(0, 0, 0);
-    position: fixed;
+     width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
     top: 0;
-    width: 100%;
-    z-index: 999;
+    z-index: 100;
+    padding: 16px;
+
 }
 
-.navbar-fixed {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 12rem;
-}
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: height 0.1s linear;
     height: 8rem;
-}
 
-.nav-container .cont-sticky {
-    height: 8rem !important;
-}
 
+}
 
 .nav-logo {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-right: 10rem;
-;
+
 }
 
 .nav-logo img {
+    text-decoration: none;
     width: 10rem;
     height: 10rem;
     cursor: pointer;
@@ -51,27 +46,21 @@
 }
 
 .nav-links {
+    font-size: 1.8rem;
+    text-transform: uppercase;
     display: flex;
+    gap: 2.5rem;
+   margin-right: 30px;
     align-items: center;
     list-style: none;
-    gap: 50px;
     color: rgb(255, 255, 255);
-    font-size: 20px;
     font-weight: 500;
-    /*font-size: 1.8rem;*/
-    /*text-transform: uppercase;*/
-    /*display: flex;*/
-    /*gap: 2.5rem;*/
 }
-
 .nav-links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
-}
 
 .nav-links i {
     cursor: pointer;
@@ -82,67 +71,105 @@
     color:rgb(255, 255, 255);
 }
 
-.nav-links li{
-    color:rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
+.navLinksListItem {
+    margin: 1rem;
     cursor: pointer;
 }
 
-.nav-links hr {
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: rgb(255, 255, 255);
-
+.navLinksListItem:hover {
+    color: rgb(255, 255, 255);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
+
+.active {
+    color: rgb(255, 255, 255) ;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+
 
 .nav-login-cart {
     display: flex;
     align-items: center;
     gap: 45px;
-}
-
-.nav-login-cart button {
-    width: 157px;
-    height: 58px;
-    outline: none;
-    border: 1px solid #7a7a7a;
-    border-radius: 75px;
-    color: #515151;
-    font-size: 20px;
-    font-weight: 500;
-    background: white;
+    color: white;
     cursor: pointer;
 }
 
-.nav-login-cart button:active {
-    background: #f3f3f3;
+.nav-login-cart ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+.header-icon:not(:last-child) {
+   margin: 0 0.5rem 0 0 ;
+}
+
 
 .nav-login-cart svg {
     width: 2rem;
     fill: rgb(255, 255, 255);
 }
 
-.nav-login-cart img {
-    fill: rgb(255, 255, 255);
+
+
+.navMenu {
+    position: absolute;
+    top: 5.5rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: #29324d;
+    border-radius: 1rem;
 }
 
-.nav-cart-count {
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -35px;
-    margin-left: -55px;
-    border-radius: 11px;
-    font-size: 14px;
-    background: #7a7a7a;
+.listItem {
     color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: black;
+}
+
+.hamburger-menu {
+    display: none;
+    gap: 3rem;
+    color: white;
+
+}
+
+.hamburger-hamb,
+.hamburger-cart {
+    font-size: 2.3rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width:600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+
+    }
+
+    .hamburger-menu ul {
+        list-style: none;
+    }
+
+    .hamburger-cart,
+    .hamburger-hamb {
+        display: flex;
+    }
+
 }

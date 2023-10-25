@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
+  text-decoration: none;
+  font-family: 'Lora', sans-serif;
 }
 
 
@@ -11,7 +12,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Lora', sans-serif;
+  overflow-y: scroll;
   position: relative;
 
 }
