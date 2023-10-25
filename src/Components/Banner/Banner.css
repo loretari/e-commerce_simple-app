@@ -1,15 +1,14 @@
 .banner-container {
     display: flex;
-    justify-content: space-between;
-    height: 36rem;
-    overflow: hidden;
+    /*justify-content: space-between;*/
+
 }
 
 .banner-container-reverse {
     display: flex;
-    justify-content: space-between;
-    height: 36rem;
-    overflow: hidden;
+    /*justify-content: space-between;*/
+    /*height: 36rem;*/
+    /*overflow: hidden;*/
     flex-direction: row-reverse;
 }
 
@@ -18,14 +17,14 @@
 }
 
 .text-side {
-    width: 50%;
-    text-align: start;
+    /*width: 50%;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 9rem;
+    padding: 0 120px;
     background-color: #E9E9E9;
+
 }
 
 .text-side h2 {
@@ -40,14 +39,23 @@
 
 .img-side {
     width: 50%;
-    text-align: end;
-    background-color: #E9E9E9;
+    /*max-height: 400px;*/
+    overflow: hidden;
+    /*text-align: end;*/
+    /*background-color: #E9E9E9;*/
 }
 
-.img-side img {
+
+.bannerImg {
     width: 100%;
-
+    object-fit: contain;
 }
+/*.img-side img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+
+/*}*/
 
 .text button {
     background-color: black;
@@ -66,3 +74,70 @@
     background-color: transparent;
     color: black;
 }
+/*@media (max-width: 1200px) {*/
+/*    .banner-container {*/
+/*        display: block;*/
+/*        width: 100%;*/
+/*    }*/
+/*    .text-side {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+@media only screen and (max-width: 960px) {
+    .text-side h2 {
+        font-size: 2.2rem;
+    }
+    .text-side p {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 870px) {
+    .banner-container,
+    .banner-container-reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-side {
+        padding: 30px;
+        width: 90%;
+    }
+    .img-side {
+       width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+    .banner-container,
+    .banner-container-reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+       .text-side {
+           width: 90%;
+       }
+    .img-side {
+        width: 90%;
+    }
+}
+
+/*@media (max-width: 750px) {*/
+/*    .banner-container {*/
+/*        display: block;*/
+/*        max-width: 80rem;*/
+/*    }*/
+/*    .text-side {*/
+/*        padding: 0 4rem;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 600px) {*/
+/*    .text-side {*/
+/*        width: 100%;*/
+/*    }*/
+    /*.img-side {*/
+    /*    height: 30rem;*/
+    /*}*/
+/*}*/

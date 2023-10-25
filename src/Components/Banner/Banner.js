@@ -14,11 +14,11 @@ function Banner({ title, text, img }) {
                        </div>
                    </div>
                    <div className= "img-side">
-                       <img src={img} alt= "banner" />
+                       <img src={img} alt= "banner" className= "bannerImg"/>
                    </div>
                </div>
-           </div>
 
+       </div>
        </div>
     )
 }

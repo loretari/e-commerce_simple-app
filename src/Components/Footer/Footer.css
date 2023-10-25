@@ -13,6 +13,7 @@ footer {
     gap: 3rem;
     text-align: center;
     justify-content: center;
+    text-decoration: none;
 }
 
 .footer-links a {
