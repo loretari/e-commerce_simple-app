@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Img1 from './Assets/ProudProducts/1.jpg';
 import Img2 from './Assets/ProudProducts/2.jpg';
 import Img3 from './Assets/ProudProducts/3.jpg';
