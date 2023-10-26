@@ -91,7 +91,11 @@ function Navbar () {
 
 
 
-            <div className= {`page-overly ${cart ? "open-flex" : "closed-flex"}`}></div>
+            <div
+                onClick={openCart}
+                className= {`page-overly ${cart ? "open-flex" : "closed-flex"}`}></div>
+
+
             <div className= {`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
             <div className= "cart-title-btn">
                     <h2>Your Shopping Cart (0 items)</h2>
