@@ -45,6 +45,54 @@
     gap: 2rem;
 }
 
+
+/* shopBy */
+
+.shopBy-header {
+    padding-top: 18rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -3rem;
+}
+
+
+.shopBy-header h3 {
+    font-size: 2.7rem;
+    text-transform: uppercase;
+}
+
+
+
+
+.shopBy-header select {
+    padding: 5px;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    font-weight: 500;
+    color: #292929;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.title-home img {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+ }
+
+.title-home  {
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    text-align: left;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 750px){
 .products-grid {
     display: grid;

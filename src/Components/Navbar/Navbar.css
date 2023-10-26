@@ -266,8 +266,29 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 16rem;
+    width: 20rem;
     margin: 15rem auto;
+}
+
+.empty-cart img {
+    margin-left: 6rem;
+    height: 12rem;
+    width: 12rem;
+
+}
+
+.empty-cart p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+
+.empty-cart button {
+    cursor: pointer;
+    font-size: 1.7rem;
+    height: 4.4rem;
+    margin-top: 3rem;
+    width: 100%;
 }
 
 .closed-cart {
@@ -302,6 +323,7 @@
 
     .cart-div {
         width: 100%;
+        height: 100%;
     }
     .cart-title-btn h2 {
    font-size: 2rem;
