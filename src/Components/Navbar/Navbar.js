@@ -137,7 +137,7 @@ function Navbar () {
                 <div className= "nav-links">
                     <Link
                         activeClass= 'active'
-                        to= '/shopBy'
+                        to= '/shopBy/all'
                         spy={true} s
                         mooth={true}
                         offset={-100}
@@ -146,7 +146,7 @@ function Navbar () {
                         className= "navLinksListItem">Shop By</Link>
                     <Link
                         activeClass= 'active'
-                        to= '/clothing'
+                        to= '/shopBy/clothing'
                         spy={true} s
                         mooth={true}
                         offset={-100}
@@ -155,7 +155,7 @@ function Navbar () {
                         className= "navLinksListItem">Clothing</Link>
                    <Link
                         activeClass= 'active'
-                        to= '/shoes'
+                        to= 'shopBy/shoes'
                         spy={true} s
                         mooth={true}
                         offset={-100}
@@ -164,7 +164,7 @@ function Navbar () {
                         className= "navLinksListItem">Shoes</Link>
                     <Link
                         activeClass= 'active'
-                        to= '/bags'
+                        to= 'shopBy/bags'
                         spy={true} s
                         mooth={true}
                         offset={-100}
