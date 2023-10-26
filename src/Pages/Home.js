@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from "../Components/Header/Header";
+import Hero from "../Components/Hero/Hero";
 import ProudProducts from "../Components/ProudProducts/ProudProducts";
 import Banner from "../Components/Banner/Banner";
 import Banner1 from '../Components/Assets/Banner/Banner1.jpg';
@@ -13,7 +13,7 @@ import Footer from "../Components/Footer/Footer";
 function Home () {
     return (
         <>
-            <Header />
+            <Hero />
             <ProudProducts />
             <Banner
             title= "Cloaks from Wool we love"

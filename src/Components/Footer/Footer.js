@@ -17,7 +17,7 @@ function Footer () {
           >About</Link>
           <Link
               activeClass= 'active'
-              to= 'header'
+              to= 'hero'
               spy={true} s
               mooth={true}
               offset={-100}
