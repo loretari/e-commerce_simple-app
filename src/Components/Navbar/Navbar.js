@@ -64,40 +64,40 @@ const cartArray = []
                 <div className= "mobile-links">
                 <Link
                     activeClass= 'active'
-                    to= "/shopBy"
+                    to= "/shopBy/all"
                     spy={true} s
                     mooth={true}
                     offset={-100}
                     duration={500}
                     className= "listItem"
-                    onClick = {() => setMobileNav(false)}>Shop By</Link>
+                    onClick = {() => setMobileNav(!mobileNav)}>Shop By</Link>
                 <Link
                     activeClass= 'active'
-                    to= "/clothing"
+                    to= "/clothing/clothing"
                     spy={true} s
                     mooth={true}
                     offset={-100}
                     duration={500}
                     className= "listItem"
-                    onClick = {() => setMobileNav(false)}>Clothing</Link>
+                    onClick = {() => setMobileNav(!mobileNav)}>Clothing</Link>
                 <Link
                     activeClass= 'active'
-                    to= "/shoes"
+                    to= "/shoes/shoes"
                     spy={true} s
                     mooth={true}
                     offset={-100}
                     duration={500}
                     className= "listItem"
-                    onClick = {() => setMobileNav(false)}>Shoes</Link>
+                    onClick = {() => setMobileNav(!mobileNav)}>Shoes</Link>
                 <Link
                     activeClass= 'active'
-                    to= "/bags"
+                    to= "/bags/bags"
                     spy={true} s
                     mooth={true}
                     offset={-100}
                     duration={500}
                     className= "listItem"
-                    onClick = {() => setMobileNav(false)}>Bags</Link>
+                    onClick = {() => setMobileNav(!mobileNav)}>Bags</Link>
                 </div>
             </div>
 
