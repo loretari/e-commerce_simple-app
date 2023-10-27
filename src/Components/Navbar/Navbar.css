@@ -366,6 +366,7 @@ font-size: 2.1rem !important;
     height: 3rem;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
 .cart-btns p {

@@ -1,9 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import Product2 from "../Assets/Products/9.jpg";
 import CrossImg from "../Assets/cart_cross_icon.png";
 import '../Navbar/Navbar.css';
 
 function CartItem () {
+
+    const [quantity, setQuantity] = useState(1);
+
+   const increase = () => {
+       if (quantity >= 1) {
+           setQuantity(quantity + 1);
+       }
+    }
+
+    const decrease = () => {
+       if (quantity > 1) {
+           setQuantity(quantity - 1);
+       }
+    }
+
     return (
    <div className= "cart-item">
        <div className= "cart-img">
@@ -12,9 +27,9 @@ function CartItem () {
        <div className= "cart-middle">
            <p className= "cart-name">Black Velvet Dress</p>
            <div className= "cart-btns">
-               <button>-</button>
-               <p className= "quantity">1</p>
-               <button>+</button>
+               <button onClick={decrease}>-</button>
+               <p className= "quantity">{quantity}</p>
+               <button onClick={increase}>+</button>
            </div>
        </div>
        <div className= "cart-right">

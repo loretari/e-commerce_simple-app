@@ -11,6 +11,8 @@ import ClothingPage from "./Pages/ClothingPage";
 import BagsPage from "./Pages/BagsPage";
 import ShoesPage from "./Pages/ShoesPage";
 import AllPage from "./Pages/AllPage";
+import ProductPage from "./Pages/ProductPage";
+
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
             <Route path= "bags" element={<BagsPage/>} >
                 <Route path= "bags" element={<Bags/>} />
             </Route>
+            <Route path= "product" element={<ProductPage/>}
+            ></Route>
         </Routes>
       </div>
 
