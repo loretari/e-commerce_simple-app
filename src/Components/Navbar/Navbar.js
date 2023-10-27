@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import LogoImg from '../Assets/logo_Smile2.png';
 import CrossImg from '../Assets/cart_cross_icon.png';
 import EmptyCary from '../Assets/Cart/empty-cart.png';
+import CartWithItems from "../Cart/CartWithItems";
 
 
 function Navbar () {
@@ -13,6 +14,9 @@ function Navbar () {
 
     const [cart, setCart] = useState(false);
     const [mobileNav, setMobileNav] = useState(false);
+
+    // array for cart items
+    const cartArray = [];
 
     // const handleScroll = () => {
     //     if (window.scrollY > 10) {
@@ -90,25 +94,25 @@ function Navbar () {
             </div>
 
 
-
+            {/* overly */}
             <div
                 onClick={openCart}
-                className= {`page-overly ${cart ? "open-flex" : "closed-flex"}`}></div>
+                className= {`page-overly ${cart ? "open-flex" : "closed-flex"}`}
+            ></div>
 
 
+            {/* cart */}
             <div className= {`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
             <div className= "cart-title-btn">
-                    <h2>Your Shopping Cart (0 items)</h2>
+                    {cart? (<h2 className= "cart-full-h2">Your Shopping Cart (0 items)</h2>) : (<h2>Your Shopping Cart (0 items)</h2>)}
                     <span onClick={openCart} >
                         <img src={CrossImg} alt= "cross" />
                     </span>
                 </div>
+
+                {/*----------*/}
                 <div className= "cart-body">
-                   <div className= "empty-cart">
-     <img src={EmptyCary} alt= "cart"/>
-     <p>Your cart is empty</p>
-                       <button onClick={openCart}>Keep Browsing</button>
-                   </div>
+                    {cartArray === "" ? <EmptyCary/> : <CartWithItems/>}
                 </div>
             </div>
 
@@ -136,8 +140,9 @@ function Navbar () {
                 </div>
                 <div className= "nav-links">
                     <Link
-                        activeClass= 'active'
+                        onClick={() => window.scrollTo(0, 0)}
                         to= '/shopBy/all'
+                        activeClass= 'active'
                         spy={true} s
                         mooth={true}
                         offset={-100}
@@ -146,7 +151,8 @@ function Navbar () {
                         className= "navLinksListItem">Shop By</Link>
                     <Link
                         activeClass= 'active'
-                        to= '/clothing'
+                        onClick={() => window.scrollTo(0, 0)}
+                        to= '/clothing/clothing'
                         spy={true} s
                         mooth={true}
                         offset={-100}
@@ -155,7 +161,8 @@ function Navbar () {
                         className= "navLinksListItem">Clothing</Link>
                    <Link
                         activeClass= 'active'
-                        to= '/shoes'
+                        onClick={() => window.scrollTo(0, 0)}
+                        to= '/shoes/shoes'
                         spy={true} s
                         mooth={true}
                         offset={-100}
@@ -164,7 +171,8 @@ function Navbar () {
                         className= "navLinksListItem">Shoes</Link>
                     <Link
                         activeClass= 'active'
-                        to= '/bags'
+                        onClick={() => window.scrollTo(0, 0)}
+                        to= '/bags/bags'
                         spy={true} s
                         mooth={true}
                         offset={-100}
