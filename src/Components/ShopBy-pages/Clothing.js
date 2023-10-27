@@ -3,7 +3,7 @@ import ShopByItemClothing from './ShopByItemClothing';
 import NewsLetter from '../NewsLetter/NewsLetter';
 import Footer from "../Footer/Footer";
 
-function Bags () {
+function Clothing () {
     return (
         <>
             <ShopByItemClothing />
@@ -13,4 +13,4 @@ function Bags () {
     )
 }
 
-export default Bags;
+export default Clothing;
