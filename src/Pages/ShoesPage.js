@@ -1,17 +1,17 @@
 import React from 'react';
 import '../Components/ProudProducts/ProudProducts.css';
-import ShopByHeader from "../Components/ShopBy/ShopByHeader";
 import { Outlet } from "react-router";
+import ShoesHeader from "../Components/ShopBy/ShoesHeader";
 
-function ShopBy () {
+function ShoesPage () {
 
 
     return (
         <>
 
-            <ShopByHeader />
+            <ShoesHeader />
             <Outlet />
         </>
     )
 }
-export default ShopBy;
+export default ShoesPage;

@@ -2,9 +2,9 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import ArrowLeft from "../Assets/arrow-left.png";
 
-function ShopByHeader () {
+function ClothingHeader () {
 
-    const [btnName, setBtnName] = useState("All");
+    const [btnName, setBtnName] = useState("clothing");
 
     const handleBtnName = (e) => {
         setBtnName();
@@ -16,8 +16,8 @@ function ShopByHeader () {
                 <div className= "shopBy-header">
                     <div className= "title-home">
                         <Link
-                          onClick={() => window.scrollTo(0, 0)}
-                          to= "/">
+                            onClick={() => window.scrollTo(0, 0)}
+                            to= "/">
                             <img src={ArrowLeft} alt= "arrow" />
                             Home
                         </Link>
@@ -27,7 +27,7 @@ function ShopByHeader () {
                     <div className= "filter-btns">
                         <Link
                             to= "/all">
-                          <button  onClick={() => handleBtnName("all")}>All</button>
+                            <button  onClick={() => handleBtnName("all")}>All</button>
                         </Link>
                         <Link
                             to= "/clothing">
@@ -45,7 +45,7 @@ function ShopByHeader () {
                     </div>
                 </div>
             </div>
-            </>
+        </>
     )
 }
-export default ShopByHeader;
+export default ClothingHeader;

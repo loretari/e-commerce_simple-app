@@ -1,17 +1,17 @@
 import React from 'react';
 import '../Components/ProudProducts/ProudProducts.css';
-import ShopByHeader from "../Components/ShopBy/ShopByHeader";
 import { Outlet } from "react-router";
+import AllHeader from "../Components/ShopBy/AllHeader";
 
-function ShopBy () {
+function AllPage () {
 
 
     return (
         <>
 
-            <ShopByHeader />
+            <AllHeader />
             <Outlet />
         </>
     )
 }
-export default ShopBy;
+export default AllPage;
