@@ -6,6 +6,8 @@ import Img5 from './Assets/ProudProducts/5.jpg';
 import Img6 from './Assets/ProudProducts/6.jpg';
 import Img7 from './Assets/ProudProducts/7.jpg';
 import Img8 from './Assets/ProudProducts/8.jpg';
+import OtherImgs1 from "./Assets/Products/OtherProducts/other1.jpg";
+import OtherImgs2 from "./Assets/Products/OtherProducts/other2.jpg";
 
 
 export const items = [
@@ -15,6 +17,9 @@ export const items = [
         img: Img1,
         description: "Wool Coat with Belt",
         price: 119.00,
+        otherImgs: [OtherImgs1, OtherImgs2],
+        specs:
+        "Tradition Little Petra VB1 Armchair Sheepskin Moonlight/ Walnut/ Brass Limited Edition | We give you a special discount when you put this product in the basket.",
     },
     {
         id: 2,
@@ -22,6 +27,7 @@ export const items = [
         img: Img2,
         description: "Wool Coat with Belt",
         price: 119.00,
+        otherImgs: [OtherImgs1, OtherImgs2],
     },
     {
         id: 3,
@@ -29,6 +35,7 @@ export const items = [
         img: Img3,
         description: "Wool Coat with Belt",
         price: 119.00,
+        otherImgs: [OtherImgs1, OtherImgs2],
     },
     {
         id: 4,
@@ -36,6 +43,8 @@ export const items = [
         img: Img4,
         description: "Wool Coat with Belt",
         price: 119.00,
+        otherImgs: [OtherImgs1, OtherImgs2],
+
     },
     {
         id: 5,
@@ -43,6 +52,7 @@ export const items = [
         img: Img5,
         description: "Wool Coat with Belt",
         price: 119.00,
+        otherImgs: [OtherImgs1, OtherImgs2],
     },
     {
         id: 6,
@@ -50,6 +60,7 @@ export const items = [
         img: Img6,
         description: "Wool Coat with Belt",
         price: 119.00,
+        otherImgs: [OtherImgs1, OtherImgs2],
     },
     {
         id: 7,
@@ -57,6 +68,7 @@ export const items = [
         img: Img7,
         description: "Wool Coat with Belt",
         price: 119.00,
+        otherImgs: [OtherImgs1, OtherImgs2],
     },
     {
         id: 8,
@@ -64,6 +76,7 @@ export const items = [
         img: Img8,
         description: "Wool Coat with Belt",
         price: 119.00,
+        otherImgs: [OtherImgs1, OtherImgs2],
     },
 
 ]

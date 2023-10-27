@@ -16,7 +16,15 @@ function Navbar () {
     const [mobileNav, setMobileNav] = useState(false);
 
     // array for cart items
-    const cartArray = [];
+const cartArray = []
+
+    // let cartObject = [];
+    // const getCartItem = () => {
+    //     for (let i = 1; i < items.length + 1; i++) {
+    //         cartObject[i] = 0
+    //     }
+    //     return cartObject;
+    // }
 
     // const handleScroll = () => {
     //     if (window.scrollY > 10) {
@@ -113,6 +121,7 @@ function Navbar () {
                 {/*----------*/}
                 <div className= "cart-body">
                     {cartArray === "" ? <EmptyCary/> : <CartWithItems/>}
+                    {/*{cartObject.length < 1 ? <EmptyCary/> : <CartWithItems/>}*/}
                 </div>
             </div>
 

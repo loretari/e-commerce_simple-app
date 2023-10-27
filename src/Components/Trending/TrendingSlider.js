@@ -5,12 +5,12 @@ import TrendingItem from "./TrendingItem";
 function TrendingSlider () {
     const slideLeft = () => {
         let slider = document.getElementById("slider");
-        slider.scrollLeft = slider.scrollLeft - 225;
+        slider.scrollLeft = slider.scrollLeft - 220;
     };
 
     const slideRight = () => {
         let slider = document.getElementById("slider");
-        slider.scrollLeft = slider.scrollLeft + 225;
+        slider.scrollLeft = slider.scrollLeft + 220;
     }
 
     return (

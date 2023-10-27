@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import "../Components/ProudProducts/ProductPage.css";
-import Product1 from '../Components/Assets/Products/9.jpg';
-import Product2 from '../Components/Assets/Products/10.jpg';
-import Product3 from '../Components/Assets/Products/11.jpg';
-import Product4 from '../Components/Assets/Products/12.jpg';
+import {items} from "../Components/Data";
+import TrendingSlider from "../Components/Trending/TrendingSlider";
+import NewsLetter from "../Components/NewsLetter/NewsLetter";
+import Footer from "../Components/Footer/Footer";
 
 
 function ProductPage () {
@@ -30,15 +30,16 @@ function ProductPage () {
                 <h3 className= "product-big-name">Dress in Dark Blue</h3>
                 <div className= "product-left">
                     <div className= "big-img">
-                        <img src={Product1} alt= "product"/>
+                        <img src={items[0].img} alt= "product"/>
                     </div>
                     <div className= "small-imgs">
-                        <img src={Product2} alt= "product"/>
-                        <img src={Product3} alt= "product"/>
-                        <img src={Product4} alt= "product"/>
+                        <img src={items[0].img} alt= "product"/>
+                        <img src={items[0].otherImgs[0]} alt= "product"/>
+                        <img src={items[0].otherImgs[1]} alt= "product"/>
                     </div>
                     <div className= "product-right">
                         <p className= "product-spec">
+                            {items[0].specs}
                             This above the knee length a Navy-Blue dress
                             is made of viscose and elastane blend,
                             this is a 3/4 sleeves dress. This casual dress
@@ -51,17 +52,37 @@ function ProductPage () {
                                 <p className= "quantity">{quantity}</p>
                                 <button onClick={increase}>+</button>
                             </div>
-                                <p className= "product-price">980.00$</p>
+                                <p className= "product-price">{items[0].price}.00$</p>
                         </div>
                         <div className= "atc-buy">
                             <button className= "atc-btn">add to cart</button>
                             <button className= "buy-btn">buy now</button>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+
+
+                        <div className= "specifications">
+                            <div className= "spec">
+                                <p className= "spec-title">Fabric:</p>
+                                <p className= "title-desc">96% viscose, 4% spandex</p>
+                            </div>
+                            <div className= "spec">
+                                <p className= "spec-title">Color:</p>
+                                <p className= "title-desc">Dark Blue</p>
+                            </div>
+                            <div className= "spec">
+                                <p className= "spec-title">Size:</p>
+                                <p className= "title-desc">M</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+             <TrendingSlider/>
+             <NewsLetter/>
+             <Footer/>
     </div>
     </>
     )
