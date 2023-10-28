@@ -30,7 +30,7 @@ function ClothingHeader () {
                             <button  onClick={() => handleBtnName("all")}>All</button>
                         </Link>
                         <Link
-                            to= "/clothing">
+                            to= "clothing/clothing">
                             <button  onClick={() => handleBtnName("clothing")}>Clothing</button>
                         </Link>
                         <Link

@@ -187,14 +187,14 @@ function Navbar () {
                     <Link
                         activeClass= 'active'
                         onClick={() => window.scrollTo(0, 0)}
-                        to= '/product'
+                        to= '/bags/bags'
                         // to= '/bags/bags'
                         spy={true} s
                         mooth={true}
                         offset={-100}
                         duration={500}
                         style={{textDecoration: 'none'}}
-                        className= "navLinksListItem">Product</Link>
+                        className= "navLinksListItem">Bags</Link>
                     <div className= "nav-login-cart">
                         <ul>
                             <li className= "header-icon">

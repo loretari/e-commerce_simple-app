@@ -6,7 +6,7 @@ import NewsLetter from "../Components/NewsLetter/NewsLetter";
 import Footer from "../Components/Footer/Footer";
 
 
-function ProductPage () {
+function ProductPage ( props ) {
 
     const [quantity, setQuantity] = useState(1);
     const [image, setImage] = useState(items[0].img);
@@ -37,7 +37,7 @@ function ProductPage () {
          <div className= "product-page-div">
         <div className= "container">
             <div className= "product-div">
-                <h3 className= "product-big-name">Wool Coat with Belt </h3>
+                <h3 className= "product-big-name">{items[0].description}</h3>
                 <div className= "product-left">
                     <div className= "big-img">
                         <img src={image} alt= "product"/>
