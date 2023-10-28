@@ -1,5 +1,6 @@
 import React from 'react';
 import { items } from "../AllData";
+import {Link} from "react-router-dom";
 
 function ShopByItemClothing () {
     const filterItems = items.filter((item) => item.category === "clothing");
@@ -11,13 +12,17 @@ function ShopByItemClothing () {
                     <div className= "products-grid">
                         {filterItems.map((item) => (
                             <div key={item.id} className= "product normal">
-                                <div className= "product-header">
-                                    <img src= {item.img} alt= "product1"/>
-                                </div>
-                                <div className= "product-details">
-                                    <p>{item.description}</p>
-                                    <p className= "item-price">USD{item.price}</p>
-                                </div>
+                             <Link to={`/shopBy/product/${item.id}`}>
+                                    <div className= "product-header">
+                                        <img src= {item.img} alt= "product1"/>
+                                    </div>
+                                    <div className= "product-details">
+                                        <p>{item.description}</p>
+                                        <p className= "item-price">USD{item.price}</p>
+                                    </div>
+                                </Link>
+
+
                             </div>
                         ))}
                     </div>
