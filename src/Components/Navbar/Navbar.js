@@ -3,7 +3,7 @@ import './Navbar.css';
 import {Link} from "react-router-dom";
 import LogoImg from '../Assets/logo_Smile2.png';
 import CrossImg from '../Assets/cart_cross_icon.png';
-import EmptyCary from '../Assets/Cart/empty-cart.png';
+import EmptyCart from '../Cart/EmptyCart';
 import CartWithItems from "../Cart/CartWithItems";
 
 
@@ -16,9 +16,9 @@ function Navbar () {
     const [mobileNav, setMobileNav] = useState(false);
 
     // array for cart items
-const cartArray = []
+// const cartArray = []
 
-    // let cartObject = [];
+    let cartObject = [];
     // const getCartItem = () => {
     //     for (let i = 1; i < items.length + 1; i++) {
     //         cartObject[i] = 0
@@ -112,7 +112,8 @@ const cartArray = []
             {/* cart */}
             <div className= {`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
             <div className= "cart-title-btn">
-                    {cart? (<h2 className= "cart-full-h2">Your Shopping Cart (0 items)</h2>) : (<h2>Your Shopping Cart (0 items)</h2>)}
+                    {/*{cart? (<h2 className= "cart-full-h2">Your Shopping Cart (0 items)</h2>) : (<h2>Your Shopping Cart (0 items)</h2>)}*/}
+                <h2 className= "cart-full-h2">Your Shopping Cart (0 items)</h2>
                     <span onClick={openCart} >
                         <img src={CrossImg} alt= "cross" />
                     </span>
@@ -120,8 +121,13 @@ const cartArray = []
 
                 {/*----------*/}
                 <div className= "cart-body">
-                    {cartArray === "" ? <EmptyCary/> : <CartWithItems/>}
-                    {/*{cartObject.length < 1 ? <EmptyCary/> : <CartWithItems/>}*/}
+                    {/*{cartArray === "" ? <EmptyCart/> : <CartWithItems/>}*/}
+                    {cartObject.length < 1 ? (
+                        <EmptyCart openCart={openCart} />
+                    ) : (
+                        <CartWithItems/>
+                    )}
+
                 </div>
             </div>
 
@@ -181,13 +187,14 @@ const cartArray = []
                     <Link
                         activeClass= 'active'
                         onClick={() => window.scrollTo(0, 0)}
-                        to= '/bags/bags'
+                        to= '/product'
+                        // to= '/bags/bags'
                         spy={true} s
                         mooth={true}
                         offset={-100}
                         duration={500}
                         style={{textDecoration: 'none'}}
-                        className= "navLinksListItem">Bags</Link>
+                        className= "navLinksListItem">Product</Link>
                     <div className= "nav-login-cart">
                         <ul>
                             <li className= "header-icon">

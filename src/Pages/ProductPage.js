@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "../Components/ProudProducts/ProductPage.css";
-import {items} from "../Components/Data";
+import {items} from "../Components/AllData";
 import TrendingSlider from "../Components/Trending/TrendingSlider";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
 import Footer from "../Components/Footer/Footer";
@@ -16,18 +16,23 @@ function ProductPage () {
         }
     }
 
+
     const decrease = () => {
         if (quantity > 1) {
             setQuantity(quantity - 1);
         }
     }
 
+    const calcPrice = (quantity) => {
+        return quantity * items[0].price;
+    };
+
     return (
          <>
          <div className= "product-page-div">
         <div className= "container">
             <div className= "product-div">
-                <h3 className= "product-big-name">Dress in Dark Blue</h3>
+                <h3 className= "product-big-name">Wool Coat with Belt </h3>
                 <div className= "product-left">
                     <div className= "big-img">
                         <img src={items[0].img} alt= "product"/>
@@ -37,6 +42,7 @@ function ProductPage () {
                         <img src={items[0].otherImgs[0]} alt= "product"/>
                         <img src={items[0].otherImgs[1]} alt= "product"/>
                     </div>
+                </div>
                     <div className= "product-right">
                         <p className= "product-spec">
                             {items[0].specs}
@@ -52,7 +58,7 @@ function ProductPage () {
                                 <p className= "quantity">{quantity}</p>
                                 <button onClick={increase}>+</button>
                             </div>
-                                <p className= "product-price">{items[0].price}.00$</p>
+                                <p className= "product-price">{calcPrice(quantity)}.00$</p>
                         </div>
                         <div className= "atc-buy">
                             <button className= "atc-btn">add to cart</button>
@@ -60,7 +66,7 @@ function ProductPage () {
                         </div>
                     </div>
                 </div>
-            </div>
+
 
 
                         <div className= "specifications">

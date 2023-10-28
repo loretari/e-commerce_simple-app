@@ -6,8 +6,10 @@ import Img5 from './Assets/ProudProducts/5.jpg';
 import Img6 from './Assets/ProudProducts/6.jpg';
 import Img7 from './Assets/ProudProducts/7.jpg';
 import Img8 from './Assets/ProudProducts/8.jpg';
-import OtherImgs1 from "./Assets/Products/OtherProducts/other1.jpg";
-import OtherImgs2 from "./Assets/Products/OtherProducts/other2.jpg";
+import OtherImgs4 from "./Assets/Products/OtherProducts/other1.jpg";
+import OtherImgs3 from "./Assets/Products/OtherProducts/other2.jpg";
+import OtherImgs1 from "./Assets/Products/OtherProducts/other3.jpg";
+import OtherImgs2 from "./Assets/Products/OtherProducts/other4.jpg";
 
 
 export const items = [
@@ -52,7 +54,9 @@ export const items = [
         img: Img5,
         description: "Wool Coat with Belt",
         price: 119.00,
-        otherImgs: [OtherImgs1, OtherImgs2],
+        otherImgs: [OtherImgs3, OtherImgs4],
+        specs:
+            "Tradition Little Petra VB1 Armchair Sheepskin Moonlight/ Walnut/ Brass Limited Edition | We give you a special discount when you put this product in the basket.",
     },
     {
         id: 6,
