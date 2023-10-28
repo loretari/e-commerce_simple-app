@@ -73,7 +73,7 @@ function Navbar () {
                     onClick = {() => setMobileNav(!mobileNav)}>Shop By</Link>
                 <Link
                     activeClass= 'active'
-                    to= "/clothing/clothing"
+                    to= "/clothingPage/clothing"
                     spy={true} s
                     mooth={true}
                     offset={-100}
@@ -82,7 +82,7 @@ function Navbar () {
                     onClick = {() => setMobileNav(!mobileNav)}>Clothing</Link>
                 <Link
                     activeClass= 'active'
-                    to= "/shoes/shoes"
+                    to= "/shoesPage/shoes"
                     spy={true} s
                     mooth={true}
                     offset={-100}
@@ -91,7 +91,7 @@ function Navbar () {
                     onClick = {() => setMobileNav(!mobileNav)}>Shoes</Link>
                 <Link
                     activeClass= 'active'
-                    to= "/bags/bags"
+                    to= "/bagsPage/bags"
                     spy={true} s
                     mooth={true}
                     offset={-100}
@@ -167,7 +167,7 @@ function Navbar () {
                     <Link
                         activeClass= 'active'
                         onClick={() => window.scrollTo(0, 0)}
-                        to= '/clothing/clothing'
+                        to= '/clothingPage/clothing'
                         spy={true} s
                         mooth={true}
                         offset={-100}
@@ -177,7 +177,7 @@ function Navbar () {
                    <Link
                         activeClass= 'active'
                         onClick={() => window.scrollTo(0, 0)}
-                        to= '/shoes/shoes'
+                        to= '/shoesPage/shoes'
                         spy={true} s
                         mooth={true}
                         offset={-100}
@@ -187,7 +187,7 @@ function Navbar () {
                     <Link
                         activeClass= 'active'
                         onClick={() => window.scrollTo(0, 0)}
-                        to= '/bags/bags'
+                        to= '/bagsPage/bags'
                         // to= '/bags/bags'
                         spy={true} s
                         mooth={true}

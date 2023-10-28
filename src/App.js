@@ -26,16 +26,16 @@ function App() {
               <Route path= "shoes" element={<Shoes/>} />
               <Route path= "bags" element={<Bags/>} />
           </Route>
-            <Route path= "all" element={<AllPage/>} >
+            <Route path= "allPage" element={<AllPage/>} >
                 <Route path= "all" element={<All/>} />
             </Route>
-          <Route path= "clothing" element={<ClothingPage/>} >
+          <Route path= "clothingPage" element={<ClothingPage/>} >
               <Route path= "clothing" element={<Clothing/>} />
           </Route>
-          <Route path= "shoes" element={<ShoesPage/>} >
+          <Route path= "shoesPage" element={<ShoesPage/>} >
               <Route path= "shoes" element={<Shoes/>} />
           </Route>
-            <Route path= "bags" element={<BagsPage/>} >
+            <Route path= "bagsPage" element={<BagsPage/>} >
                 <Route path= "bags" element={<Bags/>} />
             </Route>
             <Route path= "product/:id" element={<ProductPage/>}

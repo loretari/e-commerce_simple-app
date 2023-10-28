@@ -26,19 +26,19 @@ function ClothingHeader () {
 
                     <div className= "filter-btns">
                         <Link
-                            to= "/all">
+                            to= "/allPage/all">
                             <button  onClick={() => handleBtnName("all")}>All</button>
                         </Link>
                         <Link
-                            to= "clothing/clothing">
+                            to= "/clothingPage/clothing">
                             <button  onClick={() => handleBtnName("clothing")}>Clothing</button>
                         </Link>
                         <Link
-                            to= "/shoes">
+                            to= "/shoesPage/shoes">
                             <button  onClick={() => handleBtnName("shoes")}>Shoes</button>
                         </Link>
                         <Link
-                            to= "/bags">
+                            to= "/bagsPage/bags">
                             <button  onClick={() => handleBtnName("bags")}>Bags</button>
                         </Link>
 
