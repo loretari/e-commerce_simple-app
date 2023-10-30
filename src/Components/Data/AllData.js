@@ -74,6 +74,9 @@ export const items = [
         "The model is 172,5 cm/5,8'' height, and wears Medium size item.\n" +
             "Cloak‘s length: 71 cm;\n" +
             "Belt’s length 194 cm, wide 4 cm.",
+        fabric: "Polyester, wool",
+        color: "Black",
+        size: "M",
     },
     {
         id: 2,
@@ -87,6 +90,9 @@ export const items = [
             "\n" +
             "The dress is fastened with a zipper in the back.\n" +
             "Front and back of dress are with lined (100% viscose).",
+        fabric: "Polyester, viscose",
+        color: "Black",
+        size: "M",
     },
     {
         id: 3,
@@ -100,6 +106,9 @@ export const items = [
             "The silhouette of the dress is loose...\n" +
             "\n" +
             "Front and back of dress are with lined (100% viscose).",
+        fabric: "Polyester, viscose",
+        color: "Black",
+        size: "M",
     },
     {
         id: 4,
@@ -113,6 +122,9 @@ export const items = [
             "Metal zippers are and in the shoulders of the dress front, that kick off and give a different way to wearing this dress...\n" +
             "\n" +
             "The sleeves are narrow. In the back - a metal zipper that replicates the overall style of the dress. The silhouette of the dress is loose, slightly narrowing down.",
+        fabric: "Polyester, wool",
+        color: "Blue",
+        size: "M",
 
     },
     {
@@ -129,6 +141,9 @@ export const items = [
             "Dress with tight silhouette, narrow sleeves.\n" +
             "\n" +
             "Front and back of dress are with lined (100% viscose).",
+        fabric: "Viscose, spandex",
+        color: "White with blue checks",
+        size: "M",
     },
     {
         id: 6,
@@ -143,6 +158,9 @@ export const items = [
             "\n" +
             "The dress is fastened with a zipper in the back.\n" +
             "Front and back of dress are with lined (100% viscose).",
+        fabric: "Viscose, polyester",
+        color: "Skye blue",
+        size: "M",
     },
     {
         id: 7,
@@ -154,6 +172,9 @@ export const items = [
         specs: "This above the knee length, with blue stripes Dress is made of nylon and cotton blend. This is long sleeves dress, it has two beautiful pockets. And it is Shirt Dress.\n" +
             "\n" +
             "Official and feminine, this dress could be worn to just about any kind of occasion on a summer's or spring's day. When You wear this dress you feel beautiful and exclusive.",
+        fabric: "Cotton, nylon",
+        color: "Blue with White stripes",
+        size: "M",
     },
     {
         id: 8,
@@ -168,6 +189,9 @@ export const items = [
             "\n" +
             "The dress is fastened with a zipper in the back.\n" +
             "Front and back of dress are with lined (100% viscose).",
+        fabric: "Viscose, spandex",
+        color: "Sky Blue",
+        size: "M",
     },
     {
         id: 9,
@@ -181,6 +205,9 @@ export const items = [
             "Beautifully romantic and feminine, this dress could be worn to just about any kind of occasion on a summer's day. When You dress this dress you feel beautiful and exclusive.\n" +
             "\n" +
             "The dress is fastened with a zipper in the back.\n",
+        fabric: "Viscose, spandex",
+        color: "Navy Blue",
+        size: "M",
     },
     {
         id: 10,
@@ -195,6 +222,9 @@ export const items = [
             "\n" +
             "The dress is fastened with a zipper in the back.\n" +
             "Front and back of dress are with lined (100% viscose).",
+        fabric: "Cotton, spandex",
+        color: "Navy Blue",
+        size: "M",
     },
     {
         id: 11,
@@ -206,6 +236,9 @@ export const items = [
         specs: "This above the knee length a In Blue Ornament Dress is made of cotton and elastane blend. This is long sleeves dress, it has two beautiful pockets. And it is Shirt Dress.\n" +
             "\n" +
             "Official and feminine, this dress could be worn to just about any kind of occasion on a summer's or spring's day. When You wear this dress you feel beautiful and exclusive.",
+        fabric: "Cotton, spandex",
+        color: "White with Blue ornaments",
+        size: "M",
     },
     {
         id: 12,
@@ -217,6 +250,9 @@ export const items = [
         specs: "This the knee length, with white dragon-flies dress is made of polyester. This is long sleeves dress, it has two beautiful pockets. And it is Shirt Dress.\n" +
             "\n" +
             "Official and feminine, this dress could be worn to just about any kind of occasion on a summer's or spring's day. When You wear this dress you feel beautiful and exclusive.",
+        fabric: "Polyester",
+        color: "Black with white dragon-flies",
+        size: "M",
     },
     {
         id: 13,
@@ -228,6 +264,9 @@ export const items = [
         specs: "This long sleeve Black dress is made of viscose. This dress is with pockets. And it is Shirt Dress.\n" +
             "\n" +
             "Official and feminine, this dress could be worn to just about any kind of occasion . When You wear this dress you feel beautiful and exclusive...\n",
+        fabric: "Viscose",
+        color: "Black",
+        size: "M",
     },
     {
         id: 14,
@@ -240,6 +279,9 @@ export const items = [
             "\n" +
             "The dress is fastened with a zipper in the back...\n" +
             "Front, sleeves and back of dress are with lined (100% viscose).",
+        fabric: "Polyester",
+        color: "Black",
+        size: "M",
     },
     {
         id: 15,
@@ -253,30 +295,57 @@ export const items = [
             "\n" +
             "The dress is fastened with a zipper in the back...\n" +
             "Front and back of dress are with lined (100% viscose).",
+        fabric: "Wool",
+        color: "Black",
+        size: "M",
     },
     {
         id: 16,
         category: "clothing",
         img: Img16,
-        description: "Wool Coat with Belt",
+        description: "Red Wool Coat with Belt",
         price: 119.00,
         otherImgs: [Other16Imgs1, Other16Imgs2],
+        specs: " \"The model is 172,5 cm/5,8'' height, and wears Medium size item.\\n\" +\n" +
+            "            \"Cloak‘s length: 71 cm;\\n\" +\n" +
+            "            \"Belt’s length 194 cm, wide 4 cm.\",",
+        fabric: "Wool, Polyester",
+        color: "Red",
+        size: "M",
     },
     {
         id: 17,
         category: "clothing",
         img: Img17,
-        description: "Wool Coat with Belt",
-        price: 119.00,
+        description: "Pink dress",
+        price: 108.00,
         otherImgs: [Other17Imgs1, Other17Imgs2],
+        specs: "This above the knee length a Pink dress is made of polyester and viscose blend, this is a short, like wings sleeves dress, it has two beautiful pockets. This casual dress is essentia clothing in summer.\n" +
+            "\n" +
+            "Beautifully romantic and feminine, this dress could be worn to just about any kind of occasion on a summer's day. When You dress this dress you feel beautiful and exclusive.\n" +
+            "\n" +
+            "The dress is fastened with a zipper in the back.\n" +
+            "Front and back of dress are with lined (93% acetate and 7% spandex).",
+        fabric: "Viscose, polyester",
+        color: "Pink",
+        size: "M",
     },
     {
         id: 18,
         category: "clothing",
         img: Img18,
-        description: "Wool Coat with Belt",
-        price: 119.00,
+        description: "Light Gray Dress",
+        price: 108.00,
         otherImgs: [Other18Imgs1, Other18Imgs2],
+        specs: "This above the knee length a Light Gray dress is made of polyester, viscose and elastane blend, this is a short, like wings sleeves dress, it has two beautiful pockets. This casual dress is essentia clothing in summer.\n" +
+            "\n" +
+            "Beautifully romantic and feminine, this dress could be worn to just about any kind of occasion on a summer's day. When You dress this dress you feel beautiful and exclusive.\n" +
+            "\n" +
+            "The dress is fastened with a zipper in the back.\n" +
+            "Front and back of dress are with lined (100% viscose).",
+        fabric: "Polyester",
+        color: "Light Gray",
+        size: "M",
     },
     {
         id: 19,
@@ -285,18 +354,31 @@ export const items = [
         description: "Wool Coat with Belt",
         price: 119.00,
         otherImgs: [Other19Imgs1, Other19Imgs2],
+        specs: "This the knee length, with blue dotes dress is made of polyester. This is long sleeves dress, it has two beautiful pockets. And it is Shirt Dress.\n" +
+            "\n" +
+            "Official and feminine, this dress could be worn to just about any kind of occasion on a summer's or spring's day. When You wear this dress you feel beautiful and exclusive.\n" +
+            "\n" +
+            "Front and back of dress are with lined (100% viscose).",
+        fabric: "Polyester",
+        color: "Beige with blue dots",
+        size: "M",
     },
     {
         id: 20,
         category: "clothing",
         img: Img20,
-        description: "Red Wool Coat with Belt",
-        price: 119.00,
+        description: "Navy Blue  Dress",
+        price: 109.00,
         otherImgs: [Other20Imgs1, Other20Imgs2],
         specs:
-            "The model is 172,5 cm/5,8'' height, and wears Medium size item.\n" +
-            "Cloak‘s length: 71 cm;\n" +
-            "Belt’s length 194 cm, wide 4 cm.",
+            "This the knee length a Dark Blue dress is made of cotton, viscose and elastan blend.  This is long sleeves dress, it has two beautiful pockets.\n" +
+        "\n" +
+        "Beautifully romantic and feminine, this dress could be worn to just about any kind of occasion on a summer's or sping's day. When You dress this dress you feel beautiful and exclusive.\n" +
+            "\n" +
+       "Front and back of dress are with lined (100% viscose).",
+        fabric: "Cotton, viscose, spandex",
+        color: "Navy VBlue",
+        size: "M",
     },
 
 ]
