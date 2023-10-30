@@ -14,8 +14,8 @@ function TrendingItem () {
                 <div
                     key={item.id} className= "row-item">
                     <Link
-                        onClick= {() => window.top(0, 0)}
-                        to= {(`/product/${item.id}`)}
+                        onClick= {() => window.top}
+                        to= {(`/shopBy/product/${item.id}`)}
                     >
                         <div className= "item-header">
                             <img src={item.img} alt= "product" />
