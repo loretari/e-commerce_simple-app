@@ -13,8 +13,8 @@ function ProductItem () {
                 <div
                     key={item.id} className= "product normal">
                     <Link
-                         onClick= {() => window.top(0, 0)}
-                         to= {(`/product/${item.id}`)}
+                         onClick= {() => window.top}
+                         to= {(`/shopBy/product/${item.id}`)}
                     >
                         <div className= "product-header">
                             <img src={item.img} alt= "product1"/>
