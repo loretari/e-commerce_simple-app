@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, createContext, useContext} from "react";
 import "../Components/ProudProducts/ProductPage.css";
 import {items} from "../Components/Data/AllData";
 import TrendingSlider from "../Components/Trending/TrendingSlider";
@@ -7,6 +7,9 @@ import Footer from "../Components/Footer/Footer";
 import {useParams} from "react-router";
 
 
+
+export const CartContext = createContext();
+
 function ProductPage () {
 
     const { id } = useParams();
@@ -14,6 +17,8 @@ function ProductPage () {
 
     const [quantity, setQuantity] = useState(1);
     const [image, setImage] = useState(item[0].img);
+
+    const { cartItem, addToCart } = useContext(CartContext);
 
     const changeImage = (e) => {
         setImage(e.target.src);
@@ -35,6 +40,8 @@ function ProductPage () {
     const calcPrice = (quantity) => {
         return quantity * item[0].price;
     };
+
+    console.log(cartItem);
 
     return (
          <>
@@ -75,7 +82,9 @@ function ProductPage () {
                                 <p className= "product-price">{calcPrice(quantity)}.00$</p>
                         </div>
                         <div className= "atc-buy">
-                            <button className= "atc-btn">add to cart</button>
+                            <button
+                                onClick={()=> addToCart(item[0])}
+                                className= "atc-btn">add to cart</button>
                             <button className= "buy-btn">buy now</button>
                         </div>
                     </div>

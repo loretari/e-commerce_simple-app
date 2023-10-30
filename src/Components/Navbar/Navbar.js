@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './Navbar.css';
 import {Link} from "react-router-dom";
 import LogoImg from '../Assets/logo_Smile2.png';
 import CrossImg from '../Assets/cart_cross_icon.png';
 import EmptyCart from '../Cart/EmptyCart';
 import CartWithItems from "../Cart/CartWithItems";
+import {CartContext} from "../../Pages/ProductPage";
+
 
 
 function Navbar () {
@@ -15,16 +17,10 @@ function Navbar () {
     const [cart, setCart] = useState(false);
     const [mobileNav, setMobileNav] = useState(false);
 
-    // array for cart items
-// const cartArray = []
+    const { cartItem } = useContext(CartContext);
 
-    let cartObject = [];
-    // const getCartItem = () => {
-    //     for (let i = 1; i < items.length + 1; i++) {
-    //         cartObject[i] = 0
-    //     }
-    //     return cartObject;
-    // }
+
+
 
     // const handleScroll = () => {
     //     if (window.scrollY > 10) {
@@ -122,10 +118,10 @@ function Navbar () {
                 {/*----------*/}
                 <div className= "cart-body">
                     {/*{cartArray === "" ? <EmptyCart/> : <CartWithItems/>}*/}
-                    {cartObject.length < 1 ? (
+                    {cartItem.length < 1 ? (
                         <EmptyCart openCart={openCart} />
-                    ) : (
-                        <CartWithItems/>
+                        ) : (
+                        <CartWithItems />
                     )}
 
                 </div>
@@ -208,7 +204,13 @@ function Navbar () {
                        </span>
                             </li>
                             <li className= "header-icon">
-                               <span onClick={openCart}>
+                               <span
+                                   data-array-length={cartItem.length}
+                                   onClick={openCart}
+                                   className= {`fa-solid fa-cart-shopping ${
+                                       cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
+                                       }`}
+                               >
                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.63 17.47l-.6-11a.51.51 0 00-.5-.47h-2v-.43a3.5 3.5 0 00-7 0V6h-2a.51.51 0 00-.5.47l-.62 11a.49.49 0 00.49.53h12.3a.49.49 0 00.43-.53zm-12.31-.42L4.9 7h10.2l.56 10.1-11.34-.05zM7.5 5.57a2.5 2.5 0 115 0V6h-5v-.43z" fill="currentColor"></path></svg>
                                    {/*<div className= "nav-cart-count">0</div>*/}
                                </span>
@@ -239,7 +241,12 @@ function Navbar () {
                        </span>
                             </li>
                             <li className= "header-icon">
-                               <span onClick={openCart}>
+                               <span
+                                   data-array-length={cartItem.length}
+                                   onClick={openCart}
+                               className= {`fa-solid fa-cart-shopping hamburger-cart ${
+                                   cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
+                                   }`}>
                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.63 17.47l-.6-11a.51.51 0 00-.5-.47h-2v-.43a3.5 3.5 0 00-7 0V6h-2a.51.51 0 00-.5.47l-.62 11a.49.49 0 00.49.53h12.3a.49.49 0 00.43-.53zm-12.31-.42L4.9 7h10.2l.56 10.1-11.34-.05zM7.5 5.57a2.5 2.5 0 115 0V6h-5v-.43z" fill="currentColor"></path></svg>
                                    {/*<div className= "nav-cart-count">0</div>*/}
                                </span>

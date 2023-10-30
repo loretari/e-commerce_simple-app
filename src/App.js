@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home";
@@ -11,12 +11,20 @@ import ClothingPage from "./Pages/ClothingPage";
 import BagsPage from "./Pages/BagsPage";
 import ShoesPage from "./Pages/ShoesPage";
 import AllPage from "./Pages/AllPage";
-import ProductPage from "./Pages/ProductPage";
+import ProductPage, { CartContext } from "./Pages/ProductPage";
 
 
 function App() {
+
+    const [cartItem, setCartItem] = useState([]);
+
+    const addToCart = (item) => {
+        setCartItem([...cartItem, item])
+    }
+
   return (
-      <div>
+      <>
+          <CartContext.Provider value= {{ cartItem, addToCart }}>
         <Navbar/>
         <Routes>
           <Route index path= "/" element={<Home />}/>
@@ -40,7 +48,8 @@ function App() {
             </Route>
             <Route path= "shopBy/product/:id" element={<ProductPage/>} />
         </Routes>
-      </div>
+              </CartContext.Provider>
+      </>
 
   );
 }
