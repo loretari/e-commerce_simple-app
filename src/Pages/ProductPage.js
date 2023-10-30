@@ -86,15 +86,15 @@ function ProductPage () {
                         <div className= "specifications">
                             <div className= "spec">
                                 <p className= "spec-title">Fabric:</p>
-                                <p className= "title-desc">96% viscose, 4% spandex</p>
+                                <p className= "title-desc">{item[0].fabric}</p>
                             </div>
                             <div className= "spec">
                                 <p className= "spec-title">Color:</p>
-                                <p className= "title-desc">Dark Blue</p>
+                                <p className= "title-desc">{item[0].color}</p>
                             </div>
                             <div className= "spec">
                                 <p className= "spec-title">Size:</p>
-                                <p className= "title-desc">M</p>
+                                <p className= "title-desc">{item[0].size}</p>
                             </div>
                         </div>
                     </div>
