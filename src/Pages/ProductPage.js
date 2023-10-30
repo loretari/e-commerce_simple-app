@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "../Components/ProudProducts/ProductPage.css";
-import {items} from "../Components/AllData";
+import {items} from "../Components/Data/AllData";
 import TrendingSlider from "../Components/Trending/TrendingSlider";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
 import Footer from "../Components/Footer/Footer";

@@ -1,5 +1,5 @@
 import React from 'react';
-import { items } from "../AllData";
+import { items } from "../Data/AllData";
 import {Link} from "react-router-dom";
 
 function ShopByItemBags () {

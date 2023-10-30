@@ -4,7 +4,7 @@ import Dress1 from '../Assets/Header/Dress1.jpg';
 import Dress2 from '../Assets/Header/Dress2.jpg';
 import Dress3 from '../Assets/Header/Dress3.jpg';
 import Dress4 from '../Assets/Header/Dress4.jpg';
-import { Link } from "react-router-dom";;
+import { Link } from "react-router-dom";
 
 
 function Hero () {

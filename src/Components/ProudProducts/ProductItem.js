@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProudProducts.css';
-import { items } from "../AllData";
+import { items } from "../Data/AllData";
 
 function ProductItem () {
 

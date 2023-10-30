@@ -1,15 +1,15 @@
-import Img1 from './Assets/ProudProducts/1.jpg';
-import Img2 from './Assets/ProudProducts/2.jpg';
-import Img3 from './Assets/ProudProducts/3.jpg';
-import Img4 from './Assets/ProudProducts/4.jpg';
-import Img5 from './Assets/ProudProducts/5.jpg';
-import Img6 from './Assets/ProudProducts/6.jpg';
-import Img7 from './Assets/ProudProducts/7.jpg';
-import Img8 from './Assets/ProudProducts/8.jpg';
-import OtherImgs4 from "./Assets/Products/OtherProducts/other1.jpg";
-import OtherImgs3 from "./Assets/Products/OtherProducts/other2.jpg";
-import OtherImgs1 from "./Assets/Products/OtherProducts/other3.jpg";
-import OtherImgs2 from "./Assets/Products/OtherProducts/other4.jpg";
+import Img1 from '../Assets/ProudProducts/1.jpg';
+import Img2 from '../Assets/ProudProducts/2.jpg';
+import Img3 from '../Assets/ProudProducts/3.jpg';
+import Img4 from '../Assets/ProudProducts/4.jpg';
+import Img5 from '../Assets/ProudProducts/5.jpg';
+import Img6 from '../Assets/ProudProducts/6.jpg';
+import Img7 from '../Assets/ProudProducts/7.jpg';
+import Img8 from '../Assets/ProudProducts/8.jpg';
+import OtherImgs4 from "../Assets/Products/OtherProducts/other1.jpg";
+import OtherImgs3 from "../Assets/Products/OtherProducts/other2.jpg";
+import OtherImgs1 from "../Assets/ProudProducts/1.1.jpg";
+import OtherImgs2 from "../Assets/ProudProducts/1.2.jpg";
 
 
 export const items = [
