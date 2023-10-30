@@ -6,7 +6,7 @@ import {CartContext} from "../../Pages/ProductPage";
 function CartItem () {
 
     const [quantity, setQuantity] = useState(1);
-    const { cartItem, setCartItem } = useContext(CartContext);
+    const { cartItem } = useContext(CartContext);
 
    const increase = () => {
        if (quantity >= 1) {
