@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from "react";
-import CrossImg from "../Assets/cart_cross_icon.png";
 import '../Navbar/Navbar.css';
 import {CartContext} from "../../Pages/ProductPage";
+import { IconX } from "@tabler/icons-react";
 
 function CartItem () {
 
@@ -61,9 +61,7 @@ function CartItem () {
                         <p className="cart-price">{calcPrice(quantity, item.price)}.00$</p>
 
                         <div>
-                            <img
-                                onClick={() => removeFromCart(item.id)}
-                                src={CrossImg} alt="cross" className="cart-icon-cross"/>
+                            <IconX onClick={() => removeFromCart(item.id)} />
                         </div>
                     </div>
                 </div>

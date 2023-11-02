@@ -6,6 +6,7 @@ import CrossImg from '../Assets/cart_cross_icon.png';
 import EmptyCart from '../Cart/EmptyCart';
 import CartWithItems from "../Cart/CartWithItems";
 import {CartContext} from "../../Pages/ProductPage";
+import {IconX} from "@tabler/icons-react";
 
 
 
@@ -108,10 +109,13 @@ function Navbar () {
             {/* cart */}
             <div className= {`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
             <div className= "cart-title-btn">
-                    {cart? (<h2 className= "cart-full-h2">Your Shopping Cart ({cartItem.length})</h2>) : (<h2>Your Shopping Cart (0 items)</h2>)}
-                    <span onClick={openCart} >
-                        <img src={CrossImg} alt= "cross" />
-                    </span>
+                    <h2 className= "cart-full-h2">
+                        Your Shopping Cart ({cartItem.length})
+                    </h2>
+              <IconX onClick={openCart}/>
+                    {/*<span onClick={openCart} >*/}
+                    {/*    <img src={CrossImg} alt= "cross" />*/}
+                    {/*</span>*/}
                 </div>
 
                 {/*----------*/}
@@ -207,7 +211,8 @@ function Navbar () {
                                <span
                                    data-array-length={cartItem.length}
                                    onClick={openCart}
-                                   className= {`fa-solid fa-cart-shopping ${
+                                   // className= {`fa-solid fa-cart-shopping ${
+                                   className={`${
                                        cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
                                        }`}
                                >
