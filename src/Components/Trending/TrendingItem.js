@@ -14,7 +14,8 @@ function TrendingItem () {
                 <div
                     key={item.id} className= "row-item">
                     <Link
-                        onClick= {() => window.top}
+                        onClick={() => window.scrollTo(0, 0)}
+                        // onClick= {() => window.top}
                         to= {(`/shopBy/product/${item.id}`)}
                     >
                         <div className= "item-header">
@@ -22,7 +23,7 @@ function TrendingItem () {
                         </div>
                         <div className= "item-description">
                             <p>{item.description}</p>
-                            <p className= "item-price">USD{item.price}</p>
+                            <p className= "item-price">USD {item.price}</p>
                         </div>
                     </Link>
 

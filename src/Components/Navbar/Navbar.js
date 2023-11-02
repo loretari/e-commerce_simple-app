@@ -135,6 +135,7 @@ function Navbar () {
 
             <div className= "nav-logo">
                     <Link
+                        onClick={() => window.scrollTo(0, 0)}
                         activeClass= 'active'
                         to= '/'
                         spy={true} s

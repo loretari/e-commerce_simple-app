@@ -8,7 +8,7 @@ import {useParams} from "react-router";
 
 
 
-export const CartContext = createContext();
+export const CartContext = createContext(null);
 
 function ProductPage () {
 
@@ -51,7 +51,7 @@ function ProductPage () {
                 <h3 className= "product-big-name">{item[0].description}</h3>
                 <div className= "product-left">
                     <div className= "big-img">
-                        <img src={image} alt= "product"/>
+                        <img src={item[0].img} alt= "product"/>
                     </div>
                     <div className= "small-imgs">
                         <img
@@ -79,7 +79,7 @@ function ProductPage () {
                                 <p className= "quantity">{quantity}</p>
                                 <button onClick={increase}>+</button>
                             </div>
-                                <p className= "product-price">{calcPrice(quantity)}.00$</p>
+                                <p className= "product-price">{calcPrice(quantity)}.00 $</p>
                         </div>
                         <div className= "atc-buy">
                             <button

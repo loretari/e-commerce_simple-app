@@ -67,7 +67,7 @@ export const items = [
         id: 1,
         category: "clothing",
         img: Img1,
-        description: "Black Wool Coat with Belt",
+        description: "Black Wool Coat",
         price: 119.00,
         otherImgs: [Other1Imgs1, Other1Imgs2],
         specs:
@@ -166,7 +166,7 @@ export const items = [
         id: 7,
         category: "clothing",
         img: Img7,
-        description: "Shirt Dress with blue stripes",
+        description: "Shirt Dress",
         price: 103.00,
         otherImgs: [Other7Imgs1, Other7Imgs2],
         specs: "This above the knee length, with blue stripes Dress is made of nylon and cotton blend. This is long sleeves dress, it has two beautiful pockets. And it is Shirt Dress.\n" +

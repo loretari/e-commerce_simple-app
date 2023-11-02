@@ -18,7 +18,7 @@ function ShopByItemClothing () {
                                     </div>
                                     <div className= "product-details">
                                         <p>{item.description}</p>
-                                        <p className= "item-price">USD{item.price}</p>
+                                        <p className= "item-price">USD {item.price}</p>
                                     </div>
                                 </Link>
 

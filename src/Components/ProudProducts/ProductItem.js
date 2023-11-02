@@ -2,6 +2,7 @@ import React from 'react';
 import './ProudProducts.css';
 import { items } from "../Data/AllData";
 import {Link} from "react-router-dom";
+import ArrowLeft from "../Assets/arrow-left.png";
 
 function ProductItem () {
 
@@ -13,8 +14,9 @@ function ProductItem () {
                 <div
                     key={item.id} className= "product normal">
                     <Link
-                         onClick= {() => window.top}
-                         to= {(`/shopBy/product/${item.id}`)}
+                        onClick={() => window.scrollTo(0, 0)}
+                         // onClick= {() => window.top(0, 0)}
+                         to= {`/shopBy/product/${item.id}`}
                     >
                         <div className= "product-header">
                             <img src={item.img} alt= "product1"/>
@@ -22,7 +24,7 @@ function ProductItem () {
                         </div>
                         <div className= "product-details">
                             <p>{item.description}</p>
-                            <p className= "item-price">USD{item.price}</p>
+                            <p className= "item-price">USD {item.price}</p>
                         </div>
                     </Link>
 

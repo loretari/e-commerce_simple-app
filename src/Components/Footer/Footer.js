@@ -8,48 +8,54 @@ function Footer () {
         <footer>
       <div className= "footer-links">
           <Link
+              onClick={() => window.scrollTo(0, 0)}
               activeClass= 'active'
-              to= 'navbar'
+              to= '/'
               spy={true} s
               mooth={true}
               offset={-100}
               duration={500}
           >About</Link>
           <Link
+              onClick={() => window.scrollTo(0, 0)}
               activeClass= 'active'
-              to= 'hero'
+              to= '/'
               spy={true} s
               mooth={true}
               offset={-100}
               duration={500}
           >Store locator</Link>
           <Link
+              onClick={() => window.scrollTo(0, 0)}
               activeClass= 'active'
-              to= 'header'
+              to= '/'
               spy={true} s
               mooth={true}
               offset={-100}
               duration={500}
           >FAQs</Link>
           <Link
+              onClick={() => window.scrollTo(0, 0)}
               activeClass= 'active'
-              to= 'header'
+              to= '/'
               spy={true} s
               mooth={true}
               offset={-100}
               duration={500}
           >News</Link>
           <Link
+              onClick={() => window.scrollTo(0, 0)}
               activeClass= 'active'
-              to= 'header'
+              to= '/'
               spy={true} s
               mooth={true}
               offset={-100}
               duration={500}
           >Careers</Link>
           <Link
+              onClick={() => window.scrollTo(0, 0)}
               activeClass= 'active'
-              to= 'header'
+              to= '/'
               spy={true} s
               mooth={true}
               offset={-100}
