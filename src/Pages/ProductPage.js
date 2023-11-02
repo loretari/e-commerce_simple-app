@@ -16,9 +16,9 @@ function ProductPage () {
     const item = items.filter((item) => item.id === parseInt(id));
 
     const [quantity, setQuantity] = useState(1);
-    const [image, setImage] = useState(item[0].img);
+    const [ setImage ] = useState(item[0].img);
 
-    const { cartItem, addToCart } = useContext(CartContext);
+    const {  addToCart } = useContext(CartContext);
 
     const changeImage = (e) => {
         setImage(e.target.src);
