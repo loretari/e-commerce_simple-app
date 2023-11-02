@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import CrossImg from "../Assets/cart_cross_icon.png";
 import '../Navbar/Navbar.css';
 import {CartContext} from "../../Pages/ProductPage";
@@ -6,62 +6,73 @@ import {CartContext} from "../../Pages/ProductPage";
 function CartItem () {
 
     const [quantity, setQuantity] = useState(1);
-    const { cartItem } = useContext(CartContext);
+    const { cartItem, setCartItem } = useContext(CartContext);
 
-   const increase = () => {
-       if (quantity >= 1) {
-           setQuantity(quantity + 1);
-       }
+    const increase = () => {
+        if (quantity >= 1) {
+            setQuantity(quantity + 1);
+        }
     }
 
     const decrease = () => {
-       if (quantity > 1) {
-           setQuantity(quantity - 1);
-       }
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
     }
 
     const calcPrice = (quantity, item) => {
         return quantity * item;
     };
 
-   const [deleteItem, setDeleteItem] = useState(cartItem);
+    const [deleteItem, setDeleteItem] = useState(cartItem);
 
-   const removeFromCart = (id) => {
-       const updateCart = deleteItem.filter((item) => item.id !== id);
-       setDeleteItem(updateCart);
-       console.log(updateCart);
-   }
+    const removeFromCart = (id) => {
+        const updateCart = cartItem.filter((item) => item.id !== id);
+        setDeleteItem(updateCart);
+        const json = JSON.stringify(cartItem.id);
+        localStorage.removeItem("cartItem", json)
+    };
+
+    useEffect(() => {
+        setCartItem(deleteItem);
+    }, [deleteItem, setCartItem]);
+
+
+
+
 
     return (
         <>
             {cartItem.map((item, id) => (
-                    <div key={id} className= "cart-item">
-                        <div className= "cart-img">
-                            <img src={item.img} alt= "product"/>
-                        </div>
-                        <div className= "cart-middle">
-                            <p className= "cart-name">{item.description}</p>
-                            <div className= "cart-btns">
-                                <button onClick={decrease}>-</button>
-                                <p className= "quantity">{quantity}</p>
-                                <button onClick={increase}>+</button>
-                            </div>
-                        </div>
-                        <div className= "cart-right">
-                            <p className= "cart-price">{calcPrice(quantity, item.price)}.00$</p>
-
-                            <div>
-                                <img
-                                    onClick={() => removeFromCart(item.id)}
-                                    src={CrossImg} alt= "cross" className= "cart-icon-cross"/>
-                            </div>
+                <div key={id} className="cart-item">
+                    <div className="cart-img">
+                        <img src={item.img} alt="product"/>
+                    </div>
+                    <div className="cart-middle">
+                        <p className="cart-name">{item.description}</p>
+                        <div className="cart-btns">
+                            <button onClick={decrease}>-</button>
+                            <p className="quantity">{quantity}</p>
+                            <button onClick={increase}>+</button>
                         </div>
                     </div>
 
+                    <div className="cart-right">
+                        <p className="cart-price">{calcPrice(quantity, item.price)}.00$</p>
+
+                        <div>
+                            <img
+                                onClick={() => removeFromCart(item.id)}
+                                src={CrossImg} alt="cross" className="cart-icon-cross"/>
+                        </div>
+                    </div>
+                </div>
 
             ))}
 
+
             </>
+
     )
 }
 

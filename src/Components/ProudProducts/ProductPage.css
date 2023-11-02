@@ -5,6 +5,7 @@
 
 .product-div {
     /*height: 65rem;*/
+    height: 100%;
     margin-bottom: 10rem;
     width: 100%;
     display: flex;
@@ -198,7 +199,10 @@
         flex-direction: column;
         align-items: center;
         gap: 3rem;
-        margin-bottom: 42rem;
+        /*margin-bottom: 42rem;*/
+        margin-bottom: 6rem;
+
+
 
     }
 

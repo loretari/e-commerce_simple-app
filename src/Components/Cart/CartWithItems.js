@@ -7,7 +7,7 @@ import EmptyCart from "./EmptyCart";
 
 function CartWithItems () {
 
-    const { cartItem } = useContext(CartContext);
+    const { cartItem, setCartItem } = useContext(CartContext);
 
     const [totalPrice, setTotalPrice] = useState(0);
 
@@ -16,17 +16,23 @@ function CartWithItems () {
         setTotalPrice(newTotalPrice);
     }, [cartItem]);
 
+
+
     return (
         <>
      <div className= "full-cart-div">
          <div className= "full-cart">
              {cartItem.map((item, id) =>
              cartItem.length !== 0 ? (
-                 <CartItem key= {id} item= {item} />
+                 <CartItem
+                     key= {id}
+                     item= {item}
+                     setCartItem = {setCartItem}/>
              ) : (
                  <EmptyCart key={id} />
              )
              )}
+
          </div>
      </div>
             <div className= "subtotal-div">

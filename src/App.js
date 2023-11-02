@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home";
@@ -22,9 +22,22 @@ function App() {
         setCartItem([...cartItem, item])
     }
 
+    useEffect(() => {
+        const json = localStorage.getItem("cartItem");
+        const savedCart = JSON.parse(json);
+        if (savedCart) {
+            setCartItem(savedCart);
+        }
+    }, []);
+
+    useEffect(() => {
+        const json = JSON.stringify(cartItem);
+        localStorage.setItem("cartItem", json);
+    }, [cartItem]);
+
   return (
       <>
-          <CartContext.Provider value= {{ cartItem, addToCart }}>
+          <CartContext.Provider value= {{ cartItem, addToCart, setCartItem }}>
         <Navbar/>
         <Routes>
           <Route index path= "/" element={<Home />}/>

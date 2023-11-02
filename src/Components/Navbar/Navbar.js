@@ -108,8 +108,7 @@ function Navbar () {
             {/* cart */}
             <div className= {`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
             <div className= "cart-title-btn">
-                    {/*{cart? (<h2 className= "cart-full-h2">Your Shopping Cart (0 items)</h2>) : (<h2>Your Shopping Cart (0 items)</h2>)}*/}
-                <h2 className= "cart-full-h2">Your Shopping Cart (0 items)</h2>
+                    {cart? (<h2 className= "cart-full-h2">Your Shopping Cart ({cartItem.length})</h2>) : (<h2>Your Shopping Cart (0 items)</h2>)}
                     <span onClick={openCart} >
                         <img src={CrossImg} alt= "cross" />
                     </span>
