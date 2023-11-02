@@ -16,9 +16,9 @@ function ProductPage () {
     const item = items.filter((item) => item.id === parseInt(id));
 
     const [quantity, setQuantity] = useState(1);
-    const [image, setImage] = useState(item[0].img);
+    const [ setImage ] = useState(item[0].img);
 
-    const { cartItem, addToCart } = useContext(CartContext);
+    const {  addToCart } = useContext(CartContext);
 
     const changeImage = (e) => {
         setImage(e.target.src);
@@ -41,10 +41,23 @@ function ProductPage () {
         return quantity * item[0].price;
     };
 
-    console.log(cartItem);
+    // console.log(cartItem);
+
+    const [notify, setNotify] = useState(false);
+
+    const showNotify = () => {
+        setNotify(!notify);
+    };
+
 
     return (
          <>
+             <div
+             onAnimationEnd={() => setNotify(false)}
+             className= {`notify ${notify ? "slide-in" : ""}`}
+             >
+                 <p>Item has been added to the cart &nbsp; ✅</p>
+             </div>
          <div className= "product-page-div">
         <div className= "container">
             <div className= "product-div">
@@ -83,7 +96,10 @@ function ProductPage () {
                         </div>
                         <div className= "atc-buy">
                             <button
-                                onClick={()=> addToCart(item[0])}
+                                onClick={()=> {
+                                    addToCart(item[0]);
+                                    showNotify();
+                                }}
                                 className= "atc-btn">add to cart</button>
                             <button className= "buy-btn">buy now</button>
                         </div>

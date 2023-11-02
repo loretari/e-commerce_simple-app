@@ -2,7 +2,6 @@ import React from 'react';
 import './ProudProducts.css';
 import { items } from "../Data/AllData";
 import {Link} from "react-router-dom";
-import ArrowLeft from "../Assets/arrow-left.png";
 
 function ProductItem () {
 
