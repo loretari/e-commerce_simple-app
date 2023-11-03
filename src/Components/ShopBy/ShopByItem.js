@@ -14,7 +14,6 @@ function ShopByItem () {
                         <div key={item.id} className= "product normal">
                             <Link
                                 onClick={() => window.scrollTo(0, 0)}
-                                // onClick= {() => window.top(0, 0)}
                                 to={`/shopBy/product/${item.id}`}>
                                 <div className= "product-header">
                                     <img src={item.img} alt= "product1"/>

@@ -5,6 +5,8 @@ import TrendingSlider from "../Components/Trending/TrendingSlider";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
 import Footer from "../Components/Footer/Footer";
 import {useParams} from "react-router";
+import {Link} from "react-router-dom";
+import ArrowLeft from "../Components/Assets/arrow-left.png";
 
 
 
@@ -16,7 +18,7 @@ function ProductPage () {
     const item = items.filter((item) => item.id === parseInt(id));
 
     const [quantity, setQuantity] = useState(1);
-    const [ setImage ] = useState(item[0].img);
+    const [ image, setImage ] = useState(item[0].img);
 
     const {  addToCart } = useContext(CartContext);
 
@@ -60,11 +62,20 @@ function ProductPage () {
              </div>
          <div className= "product-page-div">
         <div className= "container">
+            <div className= "title-home">
+                <Link
+                    onClick={() => window.scrollTo(0, 0)}
+                    to= "/">
+                    <img src={ArrowLeft} alt= "arrow" />
+                    Home
+                </Link>
+
+            </div>
             <div className= "product-div">
                 <h3 className= "product-big-name">{item[0].description}</h3>
                 <div className= "product-left">
                     <div className= "big-img">
-                        <img src={item[0].img} alt= "product"/>
+                        <img src={image} alt= "product"/>
                     </div>
                     <div className= "small-imgs">
                         <img
