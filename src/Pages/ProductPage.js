@@ -10,11 +10,13 @@ import ArrowLeft from "../Components/Assets/arrow-left.png";
 
 
 
-export const CartContext = createContext(null);
+export const CartContext = createContext();
 
 function ProductPage () {
 
     const { id } = useParams();
+
+
     const item = items.filter((item) => item.id === parseInt(id));
 
     const [quantity, setQuantity] = useState(1);
@@ -52,6 +54,8 @@ function ProductPage () {
     };
 
 
+
+
     return (
          <>
              <div
@@ -67,7 +71,7 @@ function ProductPage () {
                     onClick={() => window.scrollTo(0, 0)}
                     to= "/">
                     <img src={ArrowLeft} alt= "arrow" />
-                    Home
+                    Back
                 </Link>
 
             </div>
@@ -108,7 +112,7 @@ function ProductPage () {
                         <div className= "atc-buy">
                             <button
                                 onClick={()=> {
-                                    addToCart(item[0]);
+                                    addToCart(item[0], quantity);
                                     showNotify();
                                 }}
                                 className= "atc-btn">add to cart</button>

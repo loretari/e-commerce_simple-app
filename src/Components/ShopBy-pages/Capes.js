@@ -1,16 +1,16 @@
 import React from 'react';
-import ShopByItemClothing from './ShopByItemClothing';
+import ShopByItemCapes from './ShopByItemCapes';
 import NewsLetter from '../NewsLetter/NewsLetter';
 import Footer from "../Footer/Footer";
 
-function Clothing () {
+function Capes () {
     return (
         <>
-            <ShopByItemClothing />
+            <ShopByItemCapes />
             <NewsLetter/>
             <Footer/>
         </>
     )
 }
 
-export default Clothing;
+export default Capes;

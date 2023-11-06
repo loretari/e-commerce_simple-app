@@ -64,7 +64,13 @@ function Footer () {
 
 
       </div>
-        <p className= "copyright" >Copyright @ 2023 Lor@. All rights reserved</p>
+        <p className= "copyright" >Copyright @ 2023 &nbsp;
+            <a
+                target= "_blank"
+                rel= "noreferrer"
+                href= "https://github.com/loretari"
+            > Lor@ </a>
+            All rights reserved</p>
         </footer>
             </>
     )

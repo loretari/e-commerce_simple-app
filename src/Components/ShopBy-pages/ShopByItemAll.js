@@ -2,7 +2,7 @@ import React from 'react';
 import { items } from "../Data/AllData";
 import {Link} from "react-router-dom";
 
-function ShopByItemBags () {
+function ShopByItemAll () {
     const filterItems = items.filter((item) => item.category === "all");
 
     return (
@@ -30,4 +30,4 @@ function ShopByItemBags () {
     )
 }
 
-export default ShopByItemBags;
+export default ShopByItemAll;

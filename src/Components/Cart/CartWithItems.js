@@ -27,7 +27,8 @@ function CartWithItems () {
                  <CartItem
                      key= {id}
                      item= {item}
-                     setCartItem = {setCartItem}/>
+                     setCartItem = {setCartItem}
+                 />
              ) : (
                  <EmptyCart key={id} />
              )

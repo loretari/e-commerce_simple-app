@@ -58,6 +58,10 @@ import Other19Imgs2 from "../Assets/Products/19.2.jpg";
 import Img20 from '../Assets/Products/20.jpg';
 import Other20Imgs1 from "../Assets/Products/20.1.jpg";
 import Other20Imgs2 from "../Assets/Products/20.2.jpg";
+import Img21 from '../Assets/Products/21.1.jpg';
+import Other21Imgs1 from "../Assets/Products/21.1.jpg";
+import Other21Imgs2 from "../Assets/Products/21.2.jpg";
+import Other21Imgs3 from "../Assets/Products/21.3.jpg";
 
 
 
@@ -65,9 +69,9 @@ import Other20Imgs2 from "../Assets/Products/20.2.jpg";
 export const items = [
     {
         id: 1,
-        category: "clothing",
+        category: "capes",
         img: Img1,
-        description: "Black Wool Coat",
+        description: "Black Wool Cape",
         price: 119.00,
         otherImgs: [Other1Imgs1, Other1Imgs2],
         specs:
@@ -77,10 +81,12 @@ export const items = [
         fabric: "Polyester, wool",
         color: "Black",
         size: "M",
+        proud: true,
+        trend: false,
     },
     {
         id: 2,
-        category: "clothing",
+        category: "dresses",
         img: Img2,
         description: "Little Black dress",
         price: 103.00,
@@ -93,10 +99,12 @@ export const items = [
         fabric: "Polyester, viscose",
         color: "Black",
         size: "M",
+        proud: true,
+        trend: false,
     },
     {
         id: 3,
-        category: "clothing",
+        category: "dresses",
         img: Img3,
         description: "Black Dress",
         price: 95.00,
@@ -109,10 +117,12 @@ export const items = [
         fabric: "Polyester, viscose",
         color: "Black",
         size: "M",
+        proud: true,
+        trend: false,
     },
     {
         id: 4,
-        category: "clothing",
+        category: "dresses",
         img: Img4,
         description: "Wool Navy Dress",
         price: 103.00,
@@ -125,11 +135,13 @@ export const items = [
         fabric: "Polyester, wool",
         color: "Blue",
         size: "M",
+        proud: true,
+        trend: false,
 
     },
     {
         id: 5,
-        category: "clothing",
+        category: "dresses",
         img: Img5,
         description: "Long sleeves dress",
         price: 105.00,
@@ -144,10 +156,12 @@ export const items = [
         fabric: "Viscose, spandex",
         color: "White with blue checks",
         size: "M",
+        proud: true,
+        trend: false,
     },
     {
         id: 6,
-        category: "clothing",
+        category: "dresses",
         img: Img6,
         description: "Sky Blue Dress",
         price: 103.00,
@@ -161,10 +175,12 @@ export const items = [
         fabric: "Viscose, polyester",
         color: "Skye blue",
         size: "M",
+        proud: true,
+        trend: true,
     },
     {
         id: 7,
-        category: "clothing",
+        category: "dresses",
         img: Img7,
         description: "Shirt Dress",
         price: 103.00,
@@ -175,10 +191,12 @@ export const items = [
         fabric: "Cotton, nylon",
         color: "Blue with White stripes",
         size: "M",
+        proud: true,
+        trend: false,
     },
     {
         id: 8,
-        category: "clothing",
+        category: "dresses",
         img: Img8,
         description: "Sky Blue Dress",
         price: 121.00,
@@ -192,10 +210,12 @@ export const items = [
         fabric: "Viscose, spandex",
         color: "Sky Blue",
         size: "M",
+        proud: true,
+        trend: true,
     },
     {
         id: 9,
-        category: "clothing",
+        category: "dresses",
         img: Img9,
         description: "Navy Blue Dress",
         price: 121.00,
@@ -208,10 +228,12 @@ export const items = [
         fabric: "Viscose, spandex",
         color: "Navy Blue",
         size: "M",
+        proud: false,
+        trend: true,
     },
     {
         id: 10,
-        category: "clothing",
+        category: "dresses",
         img: Img10,
         description: "Navy Blue Dress",
         price: 103.00,
@@ -225,12 +247,15 @@ export const items = [
         fabric: "Cotton, spandex",
         color: "Navy Blue",
         size: "M",
+        proud: false,
+        trend: true,
+
     },
     {
         id: 11,
-        category: "clothing",
+        category: "dresses",
         img: Img11,
-        description: "Shirt Dress In Blue Ornament",
+        description: "Shirt Dress",
         price: 108.00,
         otherImgs: [Other11Imgs1, Other11Imgs2],
         specs: "This above the knee length a In Blue Ornament Dress is made of cotton and elastane blend. This is long sleeves dress, it has two beautiful pockets. And it is Shirt Dress.\n" +
@@ -239,10 +264,13 @@ export const items = [
         fabric: "Cotton, spandex",
         color: "White with Blue ornaments",
         size: "M",
+        proud: false,
+        trend: true,
+
     },
     {
         id: 12,
-        category: "clothing",
+        category: "dresses",
         img: Img12,
         description: "Shirt Dress with dragon-flies",
         price: 95.00,
@@ -253,10 +281,13 @@ export const items = [
         fabric: "Polyester",
         color: "Black with white dragon-flies",
         size: "M",
+        proud: false,
+        trend: false,
+
     },
     {
         id: 13,
-        category: "clothing",
+        category: "dresses",
         img: Img13,
         description: "Black Long sleeves dress",
         price: 103.00,
@@ -267,10 +298,13 @@ export const items = [
         fabric: "Viscose",
         color: "Black",
         size: "M",
+        proud: false,
+        trend: false,
+
     },
     {
         id: 14,
-        category: "clothing",
+        category: "dresses",
         img: Img14,
         description: "Black Long sleeves velvet dress",
         price: 108.00,
@@ -282,10 +316,13 @@ export const items = [
         fabric: "Polyester",
         color: "Black",
         size: "M",
+        proud: false,
+        trend: false,
+
     },
     {
         id: 15,
-        category: "clothing",
+        category: "dresses",
         img: Img15,
         description: "Wool Black Pencil Dress dress",
         price: 108.00,
@@ -298,12 +335,15 @@ export const items = [
         fabric: "Wool",
         color: "Black",
         size: "M",
+        proud: false,
+        trend: false,
+
     },
     {
         id: 16,
-        category: "clothing",
+        category: "capes",
         img: Img16,
-        description: "Red Wool Coat with Belt",
+        description: "Red Wool Cape with Belt",
         price: 119.00,
         otherImgs: [Other16Imgs1, Other16Imgs2],
         specs: " \"The model is 172,5 cm/5,8'' height, and wears Medium size item.\\n\" +\n" +
@@ -312,10 +352,13 @@ export const items = [
         fabric: "Wool, Polyester",
         color: "Red",
         size: "M",
+        proud: false,
+        trend: false,
+
     },
     {
         id: 17,
-        category: "clothing",
+        category: "dresses",
         img: Img17,
         description: "Pink dress",
         price: 108.00,
@@ -329,10 +372,13 @@ export const items = [
         fabric: "Viscose, polyester",
         color: "Pink",
         size: "M",
+        proud: false,
+        trend: true,
+
     },
     {
         id: 18,
-        category: "clothing",
+        category: "dresses",
         img: Img18,
         description: "Light Gray Dress",
         price: 108.00,
@@ -346,12 +392,15 @@ export const items = [
         fabric: "Polyester",
         color: "Light Gray",
         size: "M",
+        proud: false,
+        trend: true,
+
     },
     {
         id: 19,
-        category: "clothing",
+        category: "dresses",
         img: Img19,
-        description: "Wool Coat with Belt",
+        description: "Dress with blue dots",
         price: 119.00,
         otherImgs: [Other19Imgs1, Other19Imgs2],
         specs: "This the knee length, with blue dotes dress is made of polyester. This is long sleeves dress, it has two beautiful pockets. And it is Shirt Dress.\n" +
@@ -362,10 +411,13 @@ export const items = [
         fabric: "Polyester",
         color: "Beige with blue dots",
         size: "M",
+        proud: false,
+        trend: true,
+
     },
     {
         id: 20,
-        category: "clothing",
+        category: "dresses",
         img: Img20,
         description: "Navy Blue  Dress",
         price: 109.00,
@@ -379,6 +431,28 @@ export const items = [
         fabric: "Cotton, viscose, spandex",
         color: "Navy VBlue",
         size: "M",
+        proud: false,
+        trend: false,
+
+    },
+    {
+        id: 21,
+        category: "convertibleDresses",
+        img: Img21,
+        description: "Navy Blue  Dress",
+        price: 109.00,
+        otherImgs: [Other21Imgs1, Other21Imgs2, Other21Imgs3],
+        specs:
+            "This the knee length a Dark Blue dress is made of cotton, viscose and elastan blend.  This is long sleeves dress, it has two beautiful pockets.\n" +
+            "\n" +
+            "Beautifully romantic and feminine, this dress could be worn to just about any kind of occasion on a summer's or sping's day. When You dress this dress you feel beautiful and exclusive.\n" +
+            "\n" +
+            "Front and back of dress are with lined (100% viscose).",
+        fabric: "Cotton, viscose, spandex",
+        color: "Navy VBlue",
+        size: "M",
+        proud: false,
+
     },
 
 ]

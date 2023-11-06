@@ -32,3 +32,11 @@ footer {
     font-size: 1.7rem;
     margin-top: 3rem;
 }
+
+.copyright a {
+    text-decoration: none;
+    color: #E5E5E5;
+}
+.copyright a:hover {
+    color: #B6002C;
+}

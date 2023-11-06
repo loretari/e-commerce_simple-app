@@ -12,7 +12,7 @@ import {IconX} from "@tabler/icons-react";
 
 function Navbar () {
 
-    // const [sticky, setSticky] = useState(false);
+
 
 
     const [cart, setCart] = useState(false);
@@ -23,23 +23,6 @@ function Navbar () {
 
 
 
-    // const handleScroll = () => {
-    //     if (window.scrollY > 10) {
-    //         setSticky(true);
-    //      } else  {
-    //         sticky(false);
-    //     }
-    // };
-
-// window.addEventListener("scroll", handleScroll);
-
-// const scrollToTop = () => {
-//     window.scrollTo({
-//         top: 0,
-//         behavior: "smooth",
-//     });
-// };
-
     const openCart = () => {
         setCart(!cart);
     };
@@ -47,6 +30,8 @@ function Navbar () {
 
     return (
         <>
+
+            {/* mobile */}
             <div className= {`mobile-nav-full ${mobileNav ? "open-flex" : "closed-flex"}`}>
 
             {/*<div className= "navMenu" style={{display: mobileNav? 'flex' : 'none'}}>*/}
@@ -70,31 +55,32 @@ function Navbar () {
                     onClick = {() => setMobileNav(!mobileNav)}>Shop By</Link>
                 <Link
                     activeClass= 'active'
-                    to= "/clothingPage/clothing"
+                    to= "/dressesPage/dresses"
                     spy={true} s
                     mooth={true}
                     offset={-100}
                     duration={500}
                     className= "listItem"
-                    onClick = {() => setMobileNav(!mobileNav)}>Clothing</Link>
+                    onClick = {() => setMobileNav(!mobileNav)}>Dresses</Link>
+                    <Link
+                        activeClass= 'active'
+                        to= "/convertibleDressesPage/convertibleDresses"
+                        spy={true} s
+                        mooth={true}
+                        offset={-100}
+                        duration={500}
+                        className= "listItem"
+                        onClick = {() => setMobileNav(!mobileNav)}>Convertible dresses</Link>
                 <Link
                     activeClass= 'active'
-                    to= "/shoesPage/shoes"
+                    to= "/capesPage/capes"
                     spy={true} s
                     mooth={true}
                     offset={-100}
                     duration={500}
                     className= "listItem"
-                    onClick = {() => setMobileNav(!mobileNav)}>Shoes</Link>
-                <Link
-                    activeClass= 'active'
-                    to= "/bagsPage/bags"
-                    spy={true} s
-                    mooth={true}
-                    offset={-100}
-                    duration={500}
-                    className= "listItem"
-                    onClick = {() => setMobileNav(!mobileNav)}>Bags</Link>
+                    onClick = {() => setMobileNav(!mobileNav)}>Capes</Link>
+
                 </div>
             </div>
 
@@ -130,7 +116,7 @@ function Navbar () {
                 </div>
             </div>
 
-
+        {/* Navbar*/}
         <nav className= "navbar" id= "navbar">
         <div className= "container">
             {/*<div className= {`nav-container ${sticky ? "cont-sticky" : ""}`}>*/}
@@ -167,34 +153,35 @@ function Navbar () {
                     <Link
                         activeClass= 'active'
                         onClick={() => window.scrollTo(0, 0)}
-                        to= '/clothingPage/clothing'
+                        to= '/dressesPage/dresses'
                         spy={true} s
                         mooth={true}
                         offset={-100}
                         duration={500}
                         style={{textDecoration: 'none'}}
-                        className= "navLinksListItem">Clothing</Link>
-                   <Link
-                        activeClass= 'active'
-                        onClick={() => window.scrollTo(0, 0)}
-                        to= '/shoesPage/shoes'
-                        spy={true} s
-                        mooth={true}
-                        offset={-100}
-                        duration={500}
-                        style={{textDecoration: 'none'}}
-                        className= "navLinksListItem">Shoes</Link>
+                        className= "navLinksListItem">Dresses</Link>
                     <Link
                         activeClass= 'active'
                         onClick={() => window.scrollTo(0, 0)}
-                        to= '/bagsPage/bags'
+                        to= '/convertibleDressesPage/convertibleDresses'
                         // to= '/bags/bags'
                         spy={true} s
                         mooth={true}
                         offset={-100}
                         duration={500}
                         style={{textDecoration: 'none'}}
-                        className= "navLinksListItem">Bags</Link>
+                        className= "navLinksListItem">Convertible dresses</Link>
+                   <Link
+                        activeClass= 'active'
+                        onClick={() => window.scrollTo(0, 0)}
+                        to= '/capesPage/capes'
+                        spy={true} s
+                        mooth={true}
+                        offset={-100}
+                        duration={500}
+                        style={{textDecoration: 'none'}}
+                        className= "navLinksListItem">Capes</Link>
+
                     <div className= "nav-login-cart">
                         <ul>
                             <li className= "header-icon">
@@ -211,13 +198,14 @@ function Navbar () {
                                <span
                                    data-array-length={cartItem.length}
                                    onClick={openCart}
-                                   // className= {`fa-solid fa-cart-shopping ${
+
                                    className={`${
                                        cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
                                        }`}
                                >
                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.63 17.47l-.6-11a.51.51 0 00-.5-.47h-2v-.43a3.5 3.5 0 00-7 0V6h-2a.51.51 0 00-.5.47l-.62 11a.49.49 0 00.49.53h12.3a.49.49 0 00.43-.53zm-12.31-.42L4.9 7h10.2l.56 10.1-11.34-.05zM7.5 5.57a2.5 2.5 0 115 0V6h-5v-.43z" fill="currentColor"></path></svg>
                                    {/*<div className= "nav-cart-count">0</div>*/}
+
                                </span>
 
                             </li>
@@ -254,6 +242,7 @@ function Navbar () {
                                    }`}>
                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.63 17.47l-.6-11a.51.51 0 00-.5-.47h-2v-.43a3.5 3.5 0 00-7 0V6h-2a.51.51 0 00-.5.47l-.62 11a.49.49 0 00.49.53h12.3a.49.49 0 00.43-.53zm-12.31-.42L4.9 7h10.2l.56 10.1-11.34-.05zM7.5 5.57a2.5 2.5 0 115 0V6h-5v-.43z" fill="currentColor"></path></svg>
                                    {/*<div className= "nav-cart-count">0</div>*/}
+
                                </span>
 
                             </li>

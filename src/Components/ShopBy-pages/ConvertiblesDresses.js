@@ -1,16 +1,16 @@
 import React from 'react';
-import ShopByItemBags from './ShopByItemBags';
+import ShopByItemConvertibleDresses from './ShopByItemConvertibleDresses';
 import NewsLetter from '../NewsLetter/NewsLetter';
 import Footer from "../Footer/Footer";
 
-function Bags () {
+function ConvertiblesDresses () {
     return (
         <>
-            <ShopByItemBags />
+            <ShopByItemConvertibleDresses />
             <NewsLetter/>
             <Footer/>
             </>
     )
 }
 
-export default Bags;
+export default ConvertiblesDresses;

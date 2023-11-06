@@ -13,7 +13,7 @@ function BannerReverse ({ title, text, img }) {
                             <p>{ text }</p>
                             <Link
                                 onClick={() => window.scrollTo(0, 0)}
-                                to= "shopBy/all">
+                                to= "dressesPage/dresses">
                                 <button>Shop now</button>
                             </Link>
 

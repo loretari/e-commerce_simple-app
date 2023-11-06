@@ -2,8 +2,8 @@ import React from 'react';
 import { items } from "../Data/AllData";
 import {Link} from "react-router-dom";
 
-function ShopByItemShoes () {
-    const filterItems = items.filter((item) => item.category === "shoes");
+function ShopByItemConvertibleDresses () {
+    const filterItems = items.filter((item) => item.category === "convertibleDresses");
 
     return (
         <>
@@ -30,4 +30,4 @@ function ShopByItemShoes () {
     )
 }
 
-export default ShopByItemShoes;
+export default ShopByItemConvertibleDresses;

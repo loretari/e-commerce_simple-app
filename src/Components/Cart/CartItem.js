@@ -8,6 +8,9 @@ function CartItem () {
     const [quantity, setQuantity] = useState(1);
     const { cartItem, setCartItem } = useContext(CartContext);
 
+
+
+
     const increase = () => {
         if (quantity >= 1) {
             setQuantity(quantity + 1);
@@ -25,6 +28,9 @@ function CartItem () {
     };
 
     const [deleteItem, setDeleteItem] = useState(cartItem);
+
+
+
 
     const removeFromCart = (id) => {
         const updateCart = cartItem.filter((item) => item.id !== id);

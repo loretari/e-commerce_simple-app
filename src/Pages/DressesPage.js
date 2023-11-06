@@ -1,17 +1,17 @@
 import React from 'react';
 import '../Components/ProudProducts/ProudProducts.css';
+import DressesHeader from "../Components/ShopBy/DressesHeader";
 import { Outlet } from "react-router";
-import BagsHeader from "../Components/ShopBy/BagsHeader";
 
-function BagsPage () {
+function DressesPage () {
 
 
     return (
         <>
 
-            <BagsHeader />
+            <DressesHeader />
             <Outlet />
         </>
     )
 }
-export default BagsPage;
+export default DressesPage;

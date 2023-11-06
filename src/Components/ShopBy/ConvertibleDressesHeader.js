@@ -2,12 +2,12 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import ArrowLeft from "../Assets/arrow-left.png";
 
-function BagsHeader () {
+function ConvertibleDressesHeader () {
 
-    const [btnName, setBtnName] = useState("bags");
+    const [btnName, setBtnName] = useState("convertibleDresses");
 
     const handleBtnName = (e) => {
-        setBtnName();
+        setBtnName(e);
     };
 
     return (
@@ -19,7 +19,7 @@ function BagsHeader () {
                             onClick={() => window.scrollTo(0, 0)}
                             to= "/">
                             <img src={ArrowLeft} alt= "arrow" />
-                            Home
+                            Back
                         </Link>
                         <h3>{btnName}</h3>
                     </div>
@@ -30,17 +30,18 @@ function BagsHeader () {
                             <button  onClick={() => handleBtnName("all")}>All</button>
                         </Link>
                         <Link
-                            to= "/clothingPage/clothing">
-                            <button  onClick={() => handleBtnName("clothing")}>Clothing</button>
+                            to= "/dressesPage/dresses">
+                            <button  onClick={() => handleBtnName("clothing")}>Dresses</button>
                         </Link>
                         <Link
-                            to= "/shoesPage/shoes">
-                            <button  onClick={() => handleBtnName("shoes")}>Shoes</button>
+                            to= "/convertibleDressesPage/convertibleDresses">
+                            <button  onClick={() => handleBtnName("convertibleDresses")}>Convertible Dresses</button>
                         </Link>
                         <Link
-                            to= "/bagsPage/bags">
-                            <button  onClick={() => handleBtnName("bags")}>Bags</button>
+                            to= "/capesPage/capes">
+                            <button  onClick={() => handleBtnName("shoes")}>Capes</button>
                         </Link>
+
 
                     </div>
                 </div>
@@ -48,4 +49,4 @@ function BagsHeader () {
         </>
     )
 }
-export default BagsHeader;
+export default ConvertibleDressesHeader;

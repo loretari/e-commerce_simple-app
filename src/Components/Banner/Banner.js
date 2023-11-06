@@ -13,7 +13,7 @@ function Banner({ title, text, img }) {
                            <p>{ text }</p>
                            <Link
                                onClick={() => window.scrollTo(0, 0)}
-                               to= "shopBy/all">
+                               to= "/capesPage/capes">
                                <button>Shop now</button>
                            </Link>
 

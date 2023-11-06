@@ -5,7 +5,9 @@ import {Link} from "react-router-dom";
 
 function ProductItem () {
 
-    const filteredItems = items.filter((item) => item.id <= 8);
+    // const filteredItems = items.filter((item) => item.id <= 8);
+    const filteredItems = items.filter((item) => item.proud);
+
 
     return (
         <>
