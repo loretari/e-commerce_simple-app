@@ -1,6 +1,8 @@
 .grid-container {
     display: grid;
-    height: 80rem;
+    height: 60rem;
+
+    /*height: 80rem;*/
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 'one two four' 'one two four-low';
@@ -28,7 +30,9 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: 90% 10%;
+
+    /*object-position: 50% 50%;*/
 }
 
 .grid-one {
