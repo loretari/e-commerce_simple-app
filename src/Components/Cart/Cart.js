@@ -1,18 +1,29 @@
 import React from "react";
-import '../Navbar/Navbar.css';
-import { IconX } from "@tabler/icons-react";
-import {useDispatch} from "react-redux";
-import { addToCart, decreaseQty, deleteProduct } from "../../Store/cartSlice";
+import {useDispatch, useSelector} from "react-redux";
+import {IconX} from "@tabler/icons-react";
+import {addToCart, decreaseQty, deleteProduct} from "../../Store/cartSlice";
+import {Link} from "react-router-dom";
 
-    const CartItem = ({item}) => {
-
+const Cart = () => {
+    const { cartList } = useSelector((state) => state.cart);
 
     const dispatch = useDispatch();
 
+
+
+    const totalPrice = cartList.reduce(
+        (price, item) => price + item.qty * item.price,
+        0
+    )
+
     return (
         <>
-                    <div className="cart-item">
-                    <div className="cart-img">
+
+            {cartList.map((item, id) => {
+                const calcPrice = item.price * item.qty
+                return(
+                        <div key={id} className="cart-item">
+                            <div className="cart-img">
                                 <img src={item.img} alt="product"/>
                             </div>
                             <div className="cart-middle">
@@ -30,7 +41,9 @@ import { addToCart, decreaseQty, deleteProduct } from "../../Store/cartSlice";
                             </div>
 
                             <div className="cart-right">
-                                <p className="cart-price">{item.qty * item.price}.00$</p>
+
+                                <p className="cart-price">{calcPrice}.00$</p>
+
 
                                 <div>
                                     <IconX onClick={() => dispatch(deleteProduct(item))} />
@@ -38,10 +51,24 @@ import { addToCart, decreaseQty, deleteProduct } from "../../Store/cartSlice";
                             </div>
                         </div>
 
+                    )
 
-            </>
+                }
 
+            )}
+
+            <div className= "subtotal-div">
+                <div className= "sub-right">
+                    <p>Subtotal</p>
+                    <p className= "total-price">{totalPrice}.00$</p>
+
+                </div>
+                <div className= "sub-left">
+                    <Link>Go To Checkout</Link>
+                </div>
+            </div>
+        </>
     )
 }
 
-export default CartItem;
+export default Cart;

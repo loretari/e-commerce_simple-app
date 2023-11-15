@@ -13,6 +13,7 @@ function ShopByItemCapes () {
                         {filterItems.map((item) => (
                             <div key={item.id} className= "product normal">
                                 <Link to={`/shopBy/product/${item.id}`}>
+                                    onClick={() => window.scrollTo(0, 0)}
                                 <div className= "product-header">
                                     <img src= {item.img} alt= "product1"/>
                                 </div>

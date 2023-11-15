@@ -7,6 +7,8 @@ import Footer from "../Components/Footer/Footer";
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
 import ArrowLeft from "../Components/Assets/arrow-left.png";
+import {useDispatch} from "react-redux";
+import {addToCart} from "../Store/cartSlice";
 
 
 
@@ -14,15 +16,20 @@ export const CartContext = createContext();
 
 function ProductPage () {
 
-    const { id } = useParams();
+    const dispatch = useDispatch();
 
+    const { id } = useParams();
 
     const item = items.filter((item) => item.id === parseInt(id));
 
     const [quantity, setQuantity] = useState(1);
     const [ image, setImage ] = useState(item[0].img);
 
-    const {  addToCart } = useContext(CartContext);
+    const handleAdd = (item, quantity) => {
+        dispatch(addToCart({product: item, num: quantity}));
+    }
+
+    // const {  addToCart } = useContext(CartContext);
 
     const changeImage = (e) => {
         setImage(e.target.src);
@@ -108,11 +115,14 @@ function ProductPage () {
                                 <button onClick={increase}>+</button>
                             </div>
                                 <p className= "product-price">{calcPrice(quantity)}.00 $</p>
+
+
                         </div>
                         <div className= "atc-buy">
                             <button
                                 onClick={()=> {
-                                    addToCart(item[0], quantity);
+                                    // addToCart(item[0], quantity);
+                                    handleAdd(item[0], quantity)
                                     showNotify();
                                 }}
                                 className= "atc-btn">add to cart</button>

@@ -1,21 +1,19 @@
-import React, {useContext, useEffect, useState} from "react";
+import React from "react";
 import CartItem from "./CartItem";
 import {Link} from "react-router-dom";
 import '../ProudProducts/ProudProducts.css';
-import {CartContext} from "../../Pages/ProductPage";
 import EmptyCart from "./EmptyCart";
+import { useSelector} from "react-redux";
 
 function CartWithItems () {
 
-    const { cartItem, setCartItem } = useContext(CartContext);
-
-    const [totalPrice, setTotalPrice] = useState(0);
+    const { cartList } = useSelector((state) => state.cart);
 
 
-    useEffect(() => {
-        const newTotalPrice = cartItem.reduce((acc, item) => acc + item.price, 0);
-        setTotalPrice(newTotalPrice);
-    }, [cartItem]);
+    const totalPrice = cartList.reduce(
+        (price, item) => price + item.qty * item.price,
+        0
+    )
 
 
 
@@ -23,24 +21,28 @@ function CartWithItems () {
         <>
      <div className= "full-cart-div">
          <div className= "full-cart">
-             {cartItem.map((item, id) =>
-             cartItem.length !== 0 ? (
+             {cartList.map((item, id) =>
+
+             cartList.length !== 0 ? (
+
                  <CartItem
                      key= {id}
                      item= {item}
-                     setCartItem = {setCartItem}
                  />
-             ) : (
+                 ) : (
                  <EmptyCart key={id} />
              )
-             )}
+              )
+             }
+
+
 
          </div>
      </div>
             <div className= "subtotal-div">
                 <div className= "sub-right">
                     <p>Subtotal</p>
-                    <p className= "total-price">{totalPrice + ".00$"}</p>
+                    <p className= "total-price">{totalPrice}.00$</p>
                 </div>
                 <div className= "sub-left">
                     <Link>Go To Checkout</Link>
