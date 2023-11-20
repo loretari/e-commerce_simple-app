@@ -1,12 +1,7 @@
 .navbar {
     background-color: rgb(0, 0, 0);
      width: 100%;
-    /*margin: 0 auto;*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: space-between;*/
     position: sticky;
-    /*position: fixed;*/
     top: 0;
     z-index: 100;
     padding: 16px;
@@ -171,11 +166,6 @@
 }
 
 .mobile-nav-full {
-    /*font-size: 2.3rem;*/
-    /*position: absolute;*/
-    /*right: 25px;*/
-    /*top: 49px;*/
-    /*cursor: pointer;*/
     background-color: #F3F3F3;
     z-index: 200;
     position: fixed;
@@ -432,15 +422,14 @@ font-size: 2.1rem !important;
     height: 10px;
     text-align: center;
     display: block;
-    /*display: flex;*/
+
 }
 
 
 .cart-right img {
     cursor: pointer;
     position: absolute;
-    /*right: 13rem;*/
-    /*top: 54rem;*/
+
 }
 
 .cart-icon-cross  {
