@@ -55,16 +55,10 @@ a {
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
     align-items: center;
     margin-bottom: -4rem;
 }
 
-
-/*.shopBy-header h3 {*/
-/*    font-size: 2.7rem;*/
-/*    text-transform: uppercase;*/
-/*}*/
 
 
 .shopBy-header a {
@@ -73,15 +67,7 @@ a {
     color: black;
 }
 
-/*.shopBy-header select {*/
-/*    padding: 5px;*/
-/*    background-color: #f4f4f4;*/
-/*    font-size: 16px;*/
-/*    font-weight: 500;*/
-/*    color: #292929;*/
-/*    cursor: pointer;*/
-/*    border: none;*/
-/*}*/
+
 
 .filter-btns button {
     padding: .6rem 1.6rem;
@@ -120,8 +106,7 @@ a {
 
 .title-home  {
     align-items: center;
-    /*color: #000;*/
-    display: flex;
+     display: flex;
     margin-bottom: 2rem;
     width: 100%;
 
