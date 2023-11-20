@@ -439,17 +439,16 @@ export const items = [
         id: 21,
         category: "convertibleDresses",
         img: Img21,
-        description: "Navy Blue  Dress",
+        description: "Gray Convertible Dress",
         price: 109.00,
         otherImgs: [Other21Imgs1, Other21Imgs2, Other21Imgs3],
         specs:
-            "This the knee length a Dark Blue dress is made of cotton, viscose and elastan blend.  This is long sleeves dress, it has two beautiful pockets.\n" +
-            "\n" +
-            "Beautifully romantic and feminine, this dress could be worn to just about any kind of occasion on a summer's or sping's day. When You dress this dress you feel beautiful and exclusive.\n" +
-            "\n" +
-            "Front and back of dress are with lined (100% viscose).",
+           "This dress can be worn in an infinite amount of ways," +
+            " elegant, sophisticated, comfortable, sexy, provocative," +
+            " conservative, casual..only a few different ways are" +
+            " shown in the photos but there is many more ways to wear this dress.",
         fabric: "Cotton, viscose, spandex",
-        color: "Navy VBlue",
+        color: "Gray",
         size: "M",
         proud: false,
 

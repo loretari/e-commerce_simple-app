@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import ArrowLeft from "../Assets/arrow-left.png";
 
+
 function ShopByHeader () {
 
     const [btnName, setBtnName] = useState("All");
@@ -19,9 +20,10 @@ function ShopByHeader () {
                           onClick={() => window.scrollTo(0, 0)}
                           to= "/">
                             <img src={ArrowLeft} alt= "arrow" />
-                            Back
+                            Home
                         </Link>
                         <h3>{btnName}</h3>
+
                     </div>
 
                     <div className= "filter-btns">

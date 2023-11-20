@@ -19,7 +19,7 @@ function ConvertibleDressesHeader () {
                             onClick={() => window.scrollTo(0, 0)}
                             to= "/">
                             <img src={ArrowLeft} alt= "arrow" />
-                            Back
+                            Home
                         </Link>
                         <h3>{btnName}</h3>
                     </div>

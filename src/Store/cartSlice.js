@@ -22,21 +22,6 @@ export const cartSlice = createSlice({
             const productExit = state.cartList.find((item) =>
                 item.id === productToAdd.id);
 
-            // if (productExit) {
-            //     productExit.quantity++;
-            //     productExit.totalPrice = productExit.totalPrice + productToAdd.price
-            //
-            // } else {
-            //     state.cartList.push({
-            //         id: productToAdd.id,
-            //         img: productToAdd.img,
-            //         price: productToAdd.price,
-            //         quantity: 1,
-            //         totalPrice: productToAdd.price,
-            //         name: productToAdd.description
-            //     })
-            // }
-
 
             if (productExit) {
                 state.cartList = state.cartList.map((item) =>

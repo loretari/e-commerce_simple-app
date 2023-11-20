@@ -122,12 +122,9 @@ a {
     align-items: center;
     /*color: #000;*/
     display: flex;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     width: 100%;
-    /*font-size: 1.6rem;*/
-    /*justify-content: center;*/
-    /*text-align: left;*/
-    /*text-decoration: none;*/
+
 }
 
 @media only screen and (max-width: 750px){
