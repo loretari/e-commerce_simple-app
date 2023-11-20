@@ -1,4 +1,4 @@
-import React, {useState, createContext, useContext} from "react";
+import React, {useState, createContext } from "react";
 import "../Components/ProudProducts/ProductPage.css";
 import {items} from "../Components/Data/AllData";
 import TrendingSlider from "../Components/Trending/TrendingSlider";
